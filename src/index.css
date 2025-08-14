@@ -61,8 +61,15 @@
     --shadow-card: 0 4px 20px hsl(120 10% 20% / 0.08);
     
     /* Transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-elegant: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    /* Enhanced gradients */
+    --gradient-mesh: radial-gradient(circle at 20% 50%, hsl(142 65% 45% / 0.3) 0%, transparent 50%), 
+                     radial-gradient(circle at 80% 20%, hsl(90 25% 70% / 0.2) 0%, transparent 50%), 
+                     radial-gradient(circle at 40% 80%, hsl(142 65% 55% / 0.2) 0%, transparent 50%);
+    --gradient-card-hover: linear-gradient(135deg, hsl(120 20% 99%), hsl(142 65% 98%));
 
     --sidebar-background: 0 0% 98%;
 
@@ -132,51 +139,168 @@
 }
 
 @layer components {
-  /* Contact Action Buttons */
+  /* Enhanced Contact Action Buttons */
   .contact-btn {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-300;
-    @apply text-sm md:text-base;
+    @apply inline-flex items-center justify-center px-8 py-4 rounded-xl font-medium;
+    @apply text-sm md:text-base relative overflow-hidden;
+    transition: var(--transition-elegant);
     box-shadow: var(--shadow-card);
+    backdrop-filter: blur(10px);
+  }
+  
+  .contact-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: var(--transition-smooth);
+  }
+  
+  .contact-btn:hover::before {
+    left: 100%;
   }
   
   .contact-btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px) scale(1.02);
     box-shadow: var(--shadow-elegant);
   }
   
   .phone-btn {
-    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+    @apply text-primary-foreground relative;
     background: var(--gradient-primary);
+    border: 1px solid hsl(var(--primary) / 0.3);
+  }
+  
+  .phone-btn:hover {
+    background: linear-gradient(135deg, hsl(142 70% 50%), hsl(142 70% 60%));
+    box-shadow: var(--shadow-glow);
   }
   
   .line-btn {
-    @apply bg-green-600 text-white hover:bg-green-700;
+    @apply text-white relative;
+    background: linear-gradient(135deg, #00C851, #28a745);
+    border: 1px solid rgba(0, 200, 81, 0.3);
+  }
+  
+  .line-btn:hover {
+    background: linear-gradient(135deg, #28a745, #00C851);
+    box-shadow: 0 0 40px rgba(0, 200, 81, 0.4);
   }
   
   .location-btn {
-    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
-  }
-  
-  /* Product Category Cards */
-  .product-card {
-    @apply bg-card rounded-xl p-6 transition-all duration-300;
-    box-shadow: var(--shadow-card);
+    @apply text-secondary-foreground relative;
     background: var(--gradient-surface);
+    border: 1px solid hsl(var(--border));
   }
   
-  .product-card:hover {
-    transform: translateY(-4px);
+  .location-btn:hover {
+    background: var(--gradient-card-hover);
     box-shadow: var(--shadow-elegant);
   }
   
-  /* Section styling */
-  .section-container {
-    @apply py-16 px-4 md:py-24;
+  /* Enhanced Product Category Cards */
+  .product-card {
+    @apply rounded-2xl p-8 relative overflow-hidden;
+    transition: var(--transition-elegant);
+    box-shadow: var(--shadow-card);
+    background: var(--gradient-surface);
+    border: 1px solid hsl(var(--border) / 0.5);
+    backdrop-filter: blur(10px);
   }
   
-  /* Hero gradient background */
+  .product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-mesh);
+    opacity: 0;
+    transition: var(--transition-smooth);
+    z-index: 0;
+  }
+  
+  .product-card:hover::before {
+    opacity: 1;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-elegant);
+    border-color: hsl(var(--primary) / 0.3);
+  }
+  
+  .product-card > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Enhanced Section styling */
+  .section-container {
+    @apply py-20 px-4 md:py-32 relative;
+  }
+  
+  /* Enhanced Hero gradient background */
   .hero-bg {
     background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-mesh);
+    opacity: 0.6;
+    animation: float 8s ease-in-out infinite;
+  }
+  
+  /* Animated elements */
+  .fade-in-up {
+    animation: slide-up 0.8s ease-out forwards;
+  }
+  
+  .fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+  
+  .scale-in {
+    animation: scale-in 0.4s ease-out forwards;
+  }
+  
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Enhanced typography */
+  .hero-title {
+    @apply text-5xl md:text-7xl lg:text-8xl font-bold;
+    background: linear-gradient(135deg, hsl(var(--foreground)), hsl(var(--primary)));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fade-in 1s ease-out;
+  }
+  
+  .hero-subtitle {
+    @apply text-xl md:text-3xl text-muted-foreground;
+    animation: slide-up 0.8s ease-out 0.3s both;
+  }
+  
+  .feature-badge {
+    @apply inline-flex items-center space-x-2 px-6 py-3 rounded-full;
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.1), hsl(var(--primary) / 0.2));
+    border: 1px solid hsl(var(--primary) / 0.3);
+    backdrop-filter: blur(10px);
+    animation: scale-in 0.6s ease-out 0.6s both;
   }
   
   /* Smooth scroll */
@@ -184,14 +308,36 @@
     scroll-behavior: smooth;
   }
   
+  /* Glassmorphism effects */
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-md border border-border/50;
+    box-shadow: var(--shadow-card);
+  }
+  
   /* Mobile optimizations */
   @media (max-width: 768px) {
     .contact-btn {
-      @apply px-4 py-3 text-sm;
+      @apply px-6 py-3 text-sm;
     }
     
     .section-container {
-      @apply py-12 px-4;
+      @apply py-16 px-4;
+    }
+    
+    .product-card {
+      @apply p-6;
+    }
+    
+    .hero-title {
+      @apply text-4xl md:text-6xl;
     }
   }
+  
+  /* Stagger animations */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+  .stagger-6 { animation-delay: 0.6s; }
 }
