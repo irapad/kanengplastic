@@ -1,18 +1,11 @@
 import { useState } from "react";
 import { Search, Package, Info } from "lucide-react";
-import turtleDragonBag from "@/assets/turtle-dragon-bag.jpg";
-import carpBag from "@/assets/carp-bag.jpg";
-import ppBag from "@/assets/pp-bag.jpg";
-import hdBag from "@/assets/hd-bag.jpg";
-import llFoodgrade from "@/assets/ll-foodgrade.jpg";
-import oppBag from "@/assets/opp-bag.jpg";
-import tshirtBag from "@/assets/tshirt-bag.jpg";
-import plasticRoll from "@/assets/plastic-roll.jpg";
-import oppTape from "@/assets/opp-tape.jpg";
-import stretchFilm from "@/assets/stretch-film.jpg";
-import strapping from "@/assets/strapping.jpg";
-import bubbleFoam from "@/assets/bubble-foam.jpg";
-import impulseSealer from "@/assets/impulse-sealer.jpg";
+import plasticBagClear from "@/assets/plastic-bag-clear.jpg";
+import plasticBagWhite from "@/assets/plastic-bag-white.jpg";
+import plasticBagFood from "@/assets/plastic-bag-food.jpg";
+import plasticBagHDPE from "@/assets/plastic-bag-hdpe.jpg";
+import tapeOPP from "@/assets/tape-opp.jpg";
+import sealingMachine from "@/assets/sealing-machine.jpg";
 
 const ProductShowcase = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -26,7 +19,7 @@ const ProductShowcase = () => {
       description: "ถุงร้อน PP ใส, ทนความร้อน",
       sizes: "4×6″, 5×8″, 6×9″, 7×11″, 8×12″",
       features: "ถุงร้อน PP ใส ทนความร้อน เหมาะสำหรับใส่อาหารร้อน",
-      image: turtleDragonBag,
+      image: plasticBagClear,
       popular: true
     },
     {
@@ -36,7 +29,7 @@ const ProductShowcase = () => {
       description: "ถุงเย็น LL ใส, เหมาะสำหรับแช่แข็ง",
       sizes: "5×8″, 6×9″, 8×12″, 9×14″",
       features: "ถุงเย็น LL ใส เหมาะสำหรับแช่แข็ง เนื้อเหนียวยืดหยุ่น",
-      image: carpBag
+      image: plasticBagWhite
     },
     {
       id: 3,
@@ -45,7 +38,7 @@ const ProductShowcase = () => {
       description: "ถุงร้อนใส (Polypropylene) เนื้อแข็งกรอบกว่า LL",
       sizes: "4×6″, 6×9″, 10×15″",
       features: "เนื้อแข็งกรอบ ทนความร้อน เหมาะสำหรับอาหารร้อน",
-      image: ppBag
+      image: plasticBagFood
     },
     {
       id: 4,
@@ -54,7 +47,7 @@ const ProductShowcase = () => {
       description: "ถุงขุ่น (HDPE) หรือถุงไฮเดน",
       sizes: "6×11″, 6×14″, 8×15″, 9×18″",
       features: "ถุงขุ่น แข็งแรง ทนทาน เหมาะสำหรับสินค้าหนัก",
-      image: hdBag
+      image: plasticBagHDPE
     },
     {
       id: 5,
@@ -63,7 +56,7 @@ const ProductShowcase = () => {
       description: "ถุงเย็น (LLDPE) เนื้อเหนียวยืดหยุ่น สำหรับอาหาร",
       sizes: "6×9″, 8×12″, 12×18″",
       features: "Food Grade เหนียวยืดหยุ่น ปลอดภัยสำหรับอาหาร",
-      image: llFoodgrade
+      image: plasticBagFood
     },
     {
       id: 6,
@@ -72,7 +65,7 @@ const ProductShowcase = () => {
       description: "ถุงใสกรอบ มีแถบกาว สำหรับใส่เสื้อผ้า, ของชำร่วย",
       sizes: "8×12+2″, 10×15+2″",
       features: "ใสกรอบ มีแถบกาว เหมาะสำหรับเสื้อผ้า ของชำร่วย",
-      image: oppBag
+      image: plasticBagClear
     },
     {
       id: 7,
@@ -81,7 +74,7 @@ const ProductShowcase = () => {
       description: "ถุงหิ้วพลาสติก (ถุงก๊อบแก๊บ)",
       sizes: "6×14″, 8×16″, 9×18″, 12×20″",
       features: "มีหูหิ้วสะดวกใช้ แข็งแรงทนทาน",
-      image: tshirtBag,
+      image: plasticBagWhite,
       popular: true
     },
     {
@@ -91,7 +84,7 @@ const ProductShowcase = () => {
       description: "ม้วนพลาสติก LDPE สำหรับปูพื้น, คลุมของ",
       sizes: "หน้ากว้าง: 1.2 ม., 1.5 ม., 2.0 ม.",
       features: "ม้วนพลาสติก LDPE เหมาะสำหรับปูพื้น คลุมของ",
-      image: plasticRoll
+      image: plasticBagClear
     },
     {
       id: 9,
@@ -100,7 +93,7 @@ const ProductShowcase = () => {
       description: "เทปใส/เทปสีน้ำตาล (OPP Tape) สำหรับปิดกล่อง",
       sizes: "หน้ากว้าง: 2 นิ้ว, ความยาว: 45 หลา, 100 หลา",
       features: "กาวแน่น ติดดี เหมาะสำหรับปิดกล่อง",
-      image: oppTape
+      image: tapeOPP
     },
     {
       id: 10,
@@ -109,7 +102,7 @@ const ProductShowcase = () => {
       description: "ฟิล์มยืดพันพาเลท (Stretch Film)",
       sizes: "หนา: 15, 17, 20 ไมครอน, หน้ากว้าง: 50 ซม.",
       features: "ฟิล์มยืดพันพาเลท ยืดหยุ่นสูง ปกป้องสินค้า",
-      image: stretchFilm
+      image: plasticBagWhite
     },
     {
       id: 11,
@@ -118,7 +111,7 @@ const ProductShowcase = () => {
       description: "สายรัดพลาสติก (PP Band) สำหรับรัดกล่อง",
       sizes: "หน้ากว้าง: 9 มม., 12 มม., 15 มม.",
       features: "สายรัดพลาสติก แข็งแรง เหมาะสำหรับรัดกล่อง",
-      image: strapping
+      image: tapeOPP
     },
     {
       id: 12,
@@ -127,7 +120,7 @@ const ProductShowcase = () => {
       description: "แอร์บับเบิ้ล หรือ โฟม EPE",
       sizes: "หน้ากว้างมาตรฐาน: 0.65 ม., 1.30 ม.",
       features: "กันกระแทก ปกป้องสินค้า มี 2 ชนิด แอร์บับเบิ้ล และโฟม EPE",
-      image: bubbleFoam
+      image: plasticBagFood
     },
     {
       id: 13,
@@ -136,7 +129,7 @@ const ProductShowcase = () => {
       description: "เครื่องซีลถุงพลาสติกแบบมือกด (Impulse Sealer)",
       sizes: "ขนาดความยาวลวด: 8″, 12″, 16″",
       features: "ซีลได้แน่น ใช้งานง่าย ประหยัดเวลา",
-      image: impulseSealer,
+      image: sealingMachine,
       popular: true
     }
   ];
