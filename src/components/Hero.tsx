@@ -30,7 +30,7 @@ const Hero = () => {
               <span className="font-bold text-primary">บริการจัดส่งด่วนพิเศษ</span>
             </div>
             <p className="text-sm md:text-base text-foreground">
-              "จัดส่งภายในวันเดียว! สำหรับลูกค้าในพื้นที่จังหวัดสมุทรสาคร สั่งเช้า รับเย็น พร้อมบริการจัดส่งฟรีถึงหน้าบ้าน"
+              "จัดส่งภายในวันเดียว! สำหรับลูกค้าในพื้นที่จังหวัดสมุทรสาคร สั่งเช้า รับเย็น พร้อมบริการจัดส่งถึงหน้าบ้าน"
             </p>
           </div>
 
@@ -71,7 +71,7 @@ const Hero = () => {
             </a>
             
             <a
-              href="https://maps.app.goo.gl/7rxFdWgps65RmmZE9?g_st=ipc"
+              href="https://share.google/QodcxC1Nw4b3YxXtk"
               className="contact-btn location-btn flex items-center space-x-2 w-full sm:w-auto justify-center"
               target="_blank"
               rel="noopener noreferrer"

@@ -10,7 +10,7 @@ const About = () => {
     {
       icon: Users,
       title: "ลูกค้าไว้วางใจ",
-      description: "มากกว่า 1,000+ รายทั่วประเทศ"
+      description: "มากกว่า 1,000+ สมุทรสาครเเละทั่วประเทศ"
     },
     {
       icon: Shield,
