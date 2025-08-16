@@ -1,4 +1,5 @@
 import { Phone, MessageCircle, MapPin, Clock, Mail, Truck } from "lucide-react";
+import mapPlaceholder from "../assets/map-placeholder.jpg";
 
 const Contact = () => {
   return (
@@ -109,19 +110,26 @@ const Contact = () => {
             <h3 className="text-2xl font-bold mb-6">แผนที่ร้าน</h3>
             
             {/* Map Placeholder */}
-            <div className="bg-card rounded-xl p-6 h-96 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                <h4 className="text-xl font-semibold mb-2">กันเองพลาสติก บางน้ำจืด</h4>
-                <p className="text-muted-foreground mb-4">บางน้ำจืด สมุทรปราการ</p>
-                <a 
-                  href="https://share.google/QodcxC1Nw4b3YxXtk" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="location-btn"
-                >
-                  เปิดแผนที่ใน Google Maps
-                </a>
+            <div className="bg-card rounded-xl overflow-hidden h-96 relative">
+              <img 
+                src={mapPlaceholder} 
+                alt="แผนที่ร้านกันเองพลาสติก บางน้ำจืด" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+                <div className="text-center text-white">
+                  <MapPin className="w-16 h-16 mx-auto mb-4" />
+                  <h4 className="text-xl font-semibold mb-2">กันเองพลาสติก บางน้ำจืด</h4>
+                  <p className="mb-4">บางน้ำจืด สมุทรปราการ</p>
+                  <a 
+                    href="https://share.google/QodcxC1Nw4b3YxXtk" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="location-btn"
+                  >
+                    เปิดแผนที่ใน Google Maps
+                  </a>
+                </div>
               </div>
             </div>
 
