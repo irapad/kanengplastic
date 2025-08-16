@@ -40,16 +40,6 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Products */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-card-foreground">สินค้ายอดนิยม</h4>
-            <nav className="flex flex-col space-y-2">
-              <span className="text-sm text-muted-foreground">ถุงพลาสติกทั่วไป</span>
-              <span className="text-sm text-muted-foreground">ถุงพิมพ์ลาย</span>
-              <span className="text-sm text-muted-foreground">เครื่องรีดปิดปากถุง</span>
-              <span className="text-sm text-muted-foreground">เทปกาว</span>
-            </nav>
-          </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
