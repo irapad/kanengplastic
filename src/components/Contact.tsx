@@ -122,15 +122,15 @@ const Contact = () => {
                 tabIndex={0}
                 title="กันเองพลาสติก บางน้ำจืด - Google Maps"
               />
-              <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg">
+              <div className="absolute top-4 right-4">
                 <a 
                   href="https://share.google/QodcxC1Nw4b3YxXtk" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors text-sm font-medium"
+                  className="bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg hover:bg-white hover:scale-110 transition-all duration-300 group"
+                  title="เปิดใน Google Maps"
                 >
-                  <MapPin className="w-4 h-4" />
-                  <span>เปิดใน Google Maps</span>
+                  <MapPin className="w-5 h-5 text-red-500 group-hover:text-red-600" />
                 </a>
               </div>
             </div>
