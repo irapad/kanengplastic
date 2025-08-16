@@ -5,6 +5,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import FloatingContactButtons from "@/components/FloatingContactButtons";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <Contact />
       <Footer />
       <BackToTop />
+      <FloatingContactButtons />
     </div>
   );
 };

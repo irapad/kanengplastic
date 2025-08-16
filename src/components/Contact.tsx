@@ -1,4 +1,4 @@
-import { Phone, MessageCircle, MapPin, Clock, Mail, Truck } from "lucide-react";
+import { MapPin, Clock, Mail, Truck } from "lucide-react";
 import mapPlaceholder from "../assets/google-maps-authentic.jpg";
 const Contact = () => {
   return <section id="contact" className="section-container bg-background">
@@ -18,45 +18,17 @@ const Contact = () => {
           <div className="space-y-8">
             <h3 className="text-2xl font-bold mb-6">ข้อมูลการติดต่อ</h3>
             
-            {/* Contact Methods */}
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4 p-6 bg-card rounded-xl">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-card-foreground">หมายเลขโทรศัพท์</h4>
-                  <p className="text-muted-foreground">081-922-2884</p>
-                  <a href="tel:0819222884" className="text-primary hover:text-primary/80 text-sm">
-                    คลิกเพื่อโทร →
-                  </a>
-                </div>
+            {/* Location Info */}
+            <div className="flex items-center space-x-4 p-6 bg-card rounded-xl">
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                <MapPin className="w-6 h-6 text-primary" />
               </div>
-
-              <div className="flex items-center space-x-4 p-6 bg-card rounded-xl">
-                <div className="w-12 h-12 bg-green-600/10 rounded-full flex items-center justify-center">
-                  <MessageCircle className="w-6 h-6 text-green-600" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-card-foreground">Line ID</h4>
-                  <p className="text-muted-foreground">เพิ่มเพื่อนผ่านเบอร์โทร 081-922-2884</p>
-                  <a href="https://line.me/R/ti/p/0819222884" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-600/80 text-sm">
-                    เพิ่มเพื่อน Line →
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4 p-6 bg-card rounded-xl">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-card-foreground">ที่ตั้งร้าน</h4>
-                  <p className="text-muted-foreground">บางน้ำจืด สมุทรปราการ</p>
-                  <a href="https://share.google/QodcxC1Nw4b3YxXtk" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 text-sm">
-                    ดูแผนที่ →
-                  </a>
-                </div>
+              <div>
+                <h4 className="font-semibold text-card-foreground">ที่ตั้งร้าน</h4>
+                <p className="text-muted-foreground">บางน้ำจืด สมุทรปราการ</p>
+                <a href="https://maps.app.goo.gl/tuiNyTepGDRAR7v57" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 text-sm">
+                  ดูแผนที่ →
+                </a>
               </div>
             </div>
 
@@ -102,49 +74,8 @@ const Contact = () => {
                   ติดต่อเราได้ทันที
                 </h3>
                 <p className="text-muted-foreground">
-                  พร้อมให้คำปรึกษาและใบเสนอราคา
+                  ใช้ปุ่มติดต่อด้านซ้ายหน้าจอ หรือดูข้อมูลเพิ่มเติมด้านล่าง
                 </p>
-              </div>
-
-              {/* Primary Contact Methods */}
-              <div className="space-y-4 mb-8">
-                <a 
-                  href="tel:0819222884" 
-                  className="group flex items-center justify-between p-6 bg-card/80 backdrop-blur-sm rounded-xl border border-primary/20 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300"
-                >
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <Phone className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-card-foreground">โทรสอบถาม</h4>
-                      <p className="text-primary font-medium">081-922-2884</p>
-                    </div>
-                  </div>
-                  <div className="text-muted-foreground group-hover:text-primary transition-colors">
-                    →
-                  </div>
-                </a>
-
-                <a 
-                  href="https://line.me/R/ti/p/0819222884" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="group flex items-center justify-between p-6 bg-card/80 backdrop-blur-sm rounded-xl border border-green-600/20 hover:border-green-600/40 hover:bg-green-600/5 transition-all duration-300"
-                >
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-green-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <MessageCircle className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-card-foreground">แชท Line</h4>
-                      <p className="text-green-600 font-medium">081-922-2884</p>
-                    </div>
-                  </div>
-                  <div className="text-muted-foreground group-hover:text-green-600 transition-colors">
-                    →
-                  </div>
-                </a>
               </div>
 
               {/* Location */}
