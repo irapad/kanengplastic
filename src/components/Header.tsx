@@ -1,7 +1,6 @@
 import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
-import dragonTurtleLogo from "@/assets/dragon-turtle-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,13 +18,8 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img 
-              src={dragonTurtleLogo} 
-              alt="กันเองพลาสติก บางน้ำจืด Logo" 
-              className="h-8 md:h-10 w-auto"
-            />
-            <h1 className="text-lg md:text-xl font-bold text-primary">
+          <div className="flex items-center">
+            <h1 className="text-xl md:text-2xl font-bold text-primary">
               กันเองพลาสติก บางน้ำจืด
             </h1>
           </div>
