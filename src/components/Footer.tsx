@@ -53,7 +53,7 @@ const Footer = () => {
                 <span>Line: 081-922-2884</span>
               </a>
               
-              <a href="https://maps.app.goo.gl/7rxFdWgps65RmmZE9?g_st=ipc" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://share.google/QodcxC1Nw4b3YxXtk" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 text-sm text-muted-foreground hover:text-primary transition-colors">
                 <MapPin className="w-4 h-4" />
                 <span>บางน้ำจืด สมุทรปราการ</span>
               </a>
