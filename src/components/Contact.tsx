@@ -142,10 +142,10 @@ const Contact = () => {
                 สำหรับข้อมูลรายละเอียดและใบเสนอราคา
               </p>
               <a 
-                href="mailto:info@kanongplastic.com" 
+                href="mailto:kakabox123@hotmail.com" 
                 className="inline-flex items-center space-x-2 text-primary hover:text-primary/80 text-sm font-medium transition-colors"
               >
-                <span>info@kanongplastic.com</span>
+                <span>kakabox123@hotmail.com</span>
                 <Mail className="w-4 h-4" />
               </a>
             </div>
