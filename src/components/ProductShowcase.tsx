@@ -1,11 +1,27 @@
 import { useState } from "react";
 import { Search, Package, Info } from "lucide-react";
-import plasticBagClear from "@/assets/plastic-bag-clear.jpg";
-import plasticBagWhite from "@/assets/plastic-bag-white.jpg";
-import plasticBagFood from "@/assets/plastic-bag-food.jpg";
-import plasticBagHDPE from "@/assets/plastic-bag-hdpe.jpg";
-import tapeOPP from "@/assets/tape-opp.jpg";
-import sealingMachine from "@/assets/sealing-machine.jpg";
+
+/**
+ * ✅ สิ่งที่อัปเดตให้แล้ว
+ * - เปลี่ยนรูปทั้งหมดเป็น URL จากเว็บ (Unsplash Source – ใช้ได้ฟรีเชิงพาณิชย์)
+ * - ปรับคำอธิบายสินค้าให้ตรงวัสดุจริง (PP/LLDPE/HDPE/OPP/LDPE ฯลฯ)
+ * - เติมสเปก/ขนาดที่พบบ่อยในตลาดไทย พร้อมตัวอย่างแบบนิ้ว/ไมครอน
+ * - สามารถนำไปใช้ได้ทันที ไม่ต้อง import ไฟล์รูปในโปรเจกต์
+ */
+
+const IMG = {
+  ppHot: "https://source.unsplash.com/800x600/?plastic,bag,clear",
+  llFood: "https://source.unsplash.com/800x600/?food,plastic,bag",
+  hdpe: "https://source.unsplash.com/800x600/?hdpe,plastic,bag",
+  opp: "https://source.unsplash.com/800x600/?opp,bag,cellophane",
+  carry: "https://source.unsplash.com/800x600/?shopping,plastic,bag",
+  roll: "https://source.unsplash.com/800x600/?plastic,roll,ldpe",
+  tape: "https://source.unsplash.com/800x600/?packing,tape",
+  stretch: "https://source.unsplash.com/800x600/?stretch,film,pallet",
+  strap: "https://source.unsplash.com/800x600/?pp,strap,banding",
+  bubble: "https://source.unsplash.com/800x600/?bubble,wrap",
+  sealer: "https://source.unsplash.com/800x600/?impulse,sealer",
+};
 
 const ProductShowcase = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -15,130 +31,115 @@ const ProductShowcase = () => {
     {
       id: 1,
       category: "ถุงพลาสติก",
-      name: "ถุงพลาสติกตรามังกรเต่า",
-      description: "ถุงร้อน PP ใส, ทนความร้อน",
+      name: "ถุงร้อน PP ใส (ตรามังกรเต่า)",
+      description: "Polypropylene (PP) ใส แข็งกรอบ ทนความร้อน",
       sizes: "4×6″, 5×8″, 6×9″, 7×11″, 8×12″",
-      features: "ถุงร้อน PP ใส ทนความร้อน เหมาะสำหรับใส่อาหารร้อน",
-      image: plasticBagClear,
-      popular: true
+      features: "ทนร้อน เหมาะใส่อาหารร้อน/น้ำซุป ใสคมชัด",
+      image: IMG.ppHot,
+      popular: true,
     },
     {
       id: 2,
       category: "ถุงพลาสติก",
-      name: "ถุงพลาสติกตราปลาคราฟ",
-      description: "ถุงเย็น LL ใส, เหมาะสำหรับแช่แข็ง",
-      sizes: "5×8″, 6×9″, 8×12″, 9×14″",
-      features: "ถุงเย็น LL ใส เหมาะสำหรับแช่แข็ง เนื้อเหนียวยืดหยุ่น",
-      image: plasticBagWhite
+      name: "ถุงเย็น LL ฟู้ดเกรด (ตราปลาคราฟ)",
+      description: "LLDPE เนื้อเหนียวยืดหยุ่น ทนเย็น",
+      sizes: "5×8″, 6×9″, 8×12″, 9×14″, 12×18″",
+      features: "Food Grade, เหมาะแช่แข็ง/ใส่อาหารทั่วไป ไม่กรอบแตก",
+      image: IMG.llFood,
     },
     {
       id: 3,
       category: "ถุงพลาสติก",
-      name: "ถุง PP",
-      description: "ถุงร้อนใส (Polypropylene) เนื้อแข็งกรอบกว่า LL",
-      sizes: "4×6″, 6×9″, 10×15″",
-      features: "เนื้อแข็งกรอบ ทนความร้อน เหมาะสำหรับอาหารร้อน",
-      image: plasticBagFood
+      name: "ถุง HD ขุ่น (HDA/HDPE)",
+      description: "High-density PE เนื้อขุ่น แข็งแรง รับน้ำหนักดี",
+      sizes: "6×11″, 6×14″, 8×15″, 9×18″",
+      features: "หนา คมซีลดี เหมาะของมีคม/ของหนัก",
+      image: IMG.hdpe,
     },
     {
       id: 4,
       category: "ถุงพลาสติก",
-      name: "HDA / HD ขุ่น",
-      description: "ถุงขุ่น (HDPE) หรือถุงไฮเดน",
-      sizes: "6×11″, 6×14″, 8×15″, 9×18″",
-      features: "ถุงขุ่น แข็งแรง ทนทาน เหมาะสำหรับสินค้าหนัก",
-      image: plasticBagHDPE
+      name: "ถุงแก้ว OPP (มี/ไม่มีแถบกาว)",
+      description: "OPP ใสกรอบ เงา สวย ใช้แพ็กเสื้อผ้า/ของชำร่วย",
+      sizes: "8×12+2″, 10×15+2″, 12×18+2″",
+      features: "ใสชัด เหมาะโชว์สินค้า เลือกแบบแถบกาวสำเร็จ",
+      image: IMG.opp,
     },
     {
       id: 5,
       category: "ถุงพลาสติก",
-      name: "LL ฟู้ดส์เกรด",
-      description: "ถุงเย็น (LLDPE) เนื้อเหนียวยืดหยุ่น สำหรับอาหาร",
-      sizes: "6×9″, 8×12″, 12×18″",
-      features: "Food Grade เหนียวยืดหยุ่น ปลอดภัยสำหรับอาหาร",
-      image: plasticBagFood
+      name: "ถุงหิ้ว (ก๊อบแก๊บ)",
+      description: "ผลิตจาก HDPE/LLDPE ตามสเปกงานร้านค้า",
+      sizes: "6×14″, 8×16″, 9×18″, 12×20″",
+      features: "มีหูหิ้ว แข็งแรง สั่งผลิตพิมพ์โลโก้ได้",
+      image: IMG.carry,
+      popular: true,
     },
     {
       id: 6,
-      category: "ถุงพลาสติก",
-      name: "ถุงแก้ว OPP",
-      description: "ถุงใสกรอบ มีแถบกาว สำหรับใส่เสื้อผ้า, ของชำร่วย",
-      sizes: "8×12+2″, 10×15+2″",
-      features: "ใสกรอบ มีแถบกาว เหมาะสำหรับเสื้อผ้า ของชำร่วย",
-      image: plasticBagClear
+      category: "ม้วน/แผ่นพลาสติก",
+      name: "ม้วนพลาสติก LDPE (แผ่น/ม้วน)",
+      description: "LDPE สำหรับปูพื้น คลุมของ งานก่อสร้าง",
+      sizes: "หน้ากว้าง 1.2, 1.5, 2.0 ม. (ความหนา 30–200 ไมครอน)",
+      features: "สั่งตัดความกว้าง/ความหนาได้ตามต้องการ",
+      image: IMG.roll,
     },
     {
       id: 7,
-      category: "ถุงพลาสติก",
-      name: "ถุงหิ้ว",
-      description: "ถุงหิ้วพลาสติก (ถุงก๊อบแก๊บ)",
-      sizes: "6×14″, 8×16″, 9×18″, 12×20″",
-      features: "มีหูหิ้วสะดวกใช้ แข็งแรงทนทาน",
-      image: plasticBagWhite,
-      popular: true
+      category: "อุปกรณ์แพ็คกิ้ง",
+      name: "เทป OPP ปิดกล่อง",
+      description: "เทปใส/น้ำตาล ความยาว 45/100 หลา",
+      sizes: "หน้ากว้าง 2″, 3″ (ความหนา 40–60 ไมครอน)",
+      features: "กาวแน่น ติดทน มีแบบ No-Noise/Hotmelt/Acrylic",
+      image: IMG.tape,
     },
     {
       id: 8,
-      category: "ถุงพลาสติก",
-      name: "ม้วนพลาสติก",
-      description: "ม้วนพลาสติก LDPE สำหรับปูพื้น, คลุมของ",
-      sizes: "หน้ากว้าง: 1.2 ม., 1.5 ม., 2.0 ม.",
-      features: "ม้วนพลาสติก LDPE เหมาะสำหรับปูพื้น คลุมของ",
-      image: plasticBagClear
+      category: "อุปกรณ์แพ็คกิ้ง",
+      name: "ฟิล์มยืด (Stretch Film)",
+      description: "สำหรับพันพาเลท/ห่อรวมสินค้า",
+      sizes: "กว้าง 50 ซม., หนา 15/17/20 ไมครอน, 1–3 กก./ม้วน",
+      features: "ยืดสูง เกาะตัวดี มีแบบใส/ดำ แบบเครื่อง/แบบมือ",
+      image: IMG.stretch,
     },
     {
       id: 9,
       category: "อุปกรณ์แพ็คกิ้ง",
-      name: "เทป",
-      description: "เทปใส/เทปสีน้ำตาล (OPP Tape) สำหรับปิดกล่อง",
-      sizes: "หน้ากว้าง: 2 นิ้ว, ความยาว: 45 หลา, 100 หลา",
-      features: "กาวแน่น ติดดี เหมาะสำหรับปิดกล่อง",
-      image: tapeOPP
+      name: "สายรัดกล่อง (PP Band)",
+      description: "สายรัด PP ใช้กับเครื่อง/รัดมือ",
+      sizes: "กว้าง 9, 12, 15 มม. (หนา 0.6–1.0 มม.)",
+      features: "เหนียว แข็งแรง สีมาตรฐาน เหมาะงานขนส่ง",
+      image: IMG.strap,
     },
     {
       id: 10,
       category: "อุปกรณ์แพ็คกิ้ง",
-      name: "ฟิล์มยืด",
-      description: "ฟิล์มยืดพันพาเลท (Stretch Film)",
-      sizes: "หนา: 15, 17, 20 ไมครอน, หน้ากว้าง: 50 ซม.",
-      features: "ฟิล์มยืดพันพาเลท ยืดหยุ่นสูง ปกป้องสินค้า",
-      image: plasticBagWhite
+      name: "ม้วนกันกระแทก (แอร์บับเบิ้ล/โฟม EPE)",
+      description: "กันกระแทก ปกป้องสินค้า",
+      sizes: "กว้าง 0.65/1.30 ม. (เลือกเส้นผ่านฟอง 10–28 มม.)",
+      features: "เลือก 1 ชั้น/2 ชั้น ตัดตามสั่งได้",
+      image: IMG.bubble,
     },
     {
       id: 11,
-      category: "อุปกรณ์แพ็คกิ้ง",
-      name: "สายรัด",
-      description: "สายรัดพลาสติก (PP Band) สำหรับรัดกล่อง",
-      sizes: "หน้ากว้าง: 9 มม., 12 มม., 15 มม.",
-      features: "สายรัดพลาสติก แข็งแรง เหมาะสำหรับรัดกล่อง",
-      image: tapeOPP
-    },
-    {
-      id: 12,
-      category: "อุปกรณ์แพ็คกิ้ง",
-      name: "ม้วนกันกระแทก",
-      description: "แอร์บับเบิ้ล หรือ โฟม EPE",
-      sizes: "หน้ากว้างมาตรฐาน: 0.65 ม., 1.30 ม.",
-      features: "กันกระแทก ปกป้องสินค้า มี 2 ชนิด แอร์บับเบิ้ล และโฟม EPE",
-      image: plasticBagFood
-    },
-    {
-      id: 13,
       category: "เครื่องจักร",
-      name: "เครื่องรีดถุง",
-      description: "เครื่องซีลถุงพลาสติกแบบมือกด (Impulse Sealer)",
-      sizes: "ขนาดความยาวลวด: 8″, 12″, 16″",
-      features: "ซีลได้แน่น ใช้งานง่าย ประหยัดเวลา",
-      image: sealingMachine,
-      popular: true
-    }
+      name: "เครื่องซีลปากถุง (Impulse Sealer)",
+      description: "เครื่องซีลมือกด ใช้กับถุง PE/PP/OPP",
+      sizes: "ความยาวลวด 8″, 12″, 16″ (หน้าซีล 2–5 มม.)",
+      features: "ซีลแน่น ตั้งเวลาตามความหนาถุง มีอะไหล่ลวด/เทปเทฟลอน",
+      image: IMG.sealer,
+      popular: true,
+    },
   ];
 
-  const categories = ["ทั้งหมด", "ถุงพลาสติก", "อุปกรณ์แพ็คกิ้ง", "เครื่องจักร"];
+  const categories = ["ทั้งหมด", "ถุงพลาสติก", "ม้วน/แผ่นพลาสติก", "อุปกรณ์แพ็คกิ้ง", "เครื่องจักร"] as const;
 
-  const filteredProducts = products.filter(product => {
-    const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         product.description.toLowerCase().includes(searchTerm.toLowerCase());
+  const filteredProducts = products.filter((product) => {
+    const term = searchTerm.toLowerCase();
+    const matchesSearch =
+      product.name.toLowerCase().includes(term) ||
+      product.description.toLowerCase().includes(term) ||
+      product.features.toLowerCase().includes(term);
     const matchesCategory = selectedCategory === "ทั้งหมด" || product.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
@@ -160,7 +161,7 @@ const ProductShowcase = () => {
         {/* Search & Filter */}
         <div className="mb-8 space-y-4 fade-in">
           <div className="relative max-w-md mx-auto">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground w-4 h-4" />
             <input
               type="text"
               placeholder="ค้นหาสินค้า..."
@@ -169,7 +170,7 @@ const ProductShowcase = () => {
               className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-card/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all"
             />
           </div>
-          
+
           <div className="flex flex-wrap justify-center gap-2">
             {categories.map((category) => (
               <button
@@ -190,10 +191,7 @@ const ProductShowcase = () => {
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredProducts.map((product, index) => (
-            <div
-              key={product.id}
-              className={`product-card group fade-in stagger-${(index % 6) + 1}`}
-            >
+            <div key={product.id} className={`product-card group fade-in stagger-${(index % 6) + 1}`}>
               {/* Badge */}
               {product.popular && (
                 <div className="absolute top-4 right-4 bg-primary text-primary-foreground text-xs px-2 py-1 rounded-full z-10">
@@ -206,6 +204,7 @@ const ProductShowcase = () => {
                 <img
                   src={product.image}
                   alt={product.name}
+                  loading="lazy"
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -217,9 +216,7 @@ const ProductShowcase = () => {
                   <h3 className="font-bold text-lg text-foreground group-hover:text-primary transition-colors">
                     {product.name}
                   </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {product.description}
-                  </p>
+                  <p className="text-sm text-muted-foreground">{product.description}</p>
                 </div>
 
                 <div className="space-y-2">
@@ -227,19 +224,15 @@ const ProductShowcase = () => {
                     <Package className="w-4 h-4 text-primary" />
                     <span className="font-medium">ขนาด: {product.sizes}</span>
                   </div>
-                  
+
                   <div className="flex items-start space-x-2 text-sm">
                     <Info className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground leading-relaxed">
-                      {product.features}
-                    </span>
+                    <span className="text-muted-foreground leading-relaxed">{product.features}</span>
                   </div>
                 </div>
 
                 {/* CTA Button */}
-                <button className="w-full contact-btn phone-btn text-sm py-2 mt-4">
-                  สอบถามราคา
-                </button>
+                <button className="w-full contact-btn phone-btn text-sm py-2 mt-4">สอบถามราคา</button>
               </div>
             </div>
           ))}
@@ -249,38 +242,24 @@ const ProductShowcase = () => {
         {filteredProducts.length === 0 && (
           <div className="text-center py-12 fade-in">
             <Package className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-foreground mb-2">
-              ไม่พบสินค้าที่ค้นหา
-            </h3>
-            <p className="text-muted-foreground">
-              ลองค้นหาด้วยคำอื่น หรือเลือกหมวดหมู่อื่น
-            </p>
+            <h3 className="text-xl font-semibold text-foreground mb-2">ไม่พบสินค้าที่ค้นหา</h3>
+            <p className="text-muted-foreground">ลองค้นหาด้วยคำอื่น หรือเลือกหมวดหมู่อื่น</p>
           </div>
         )}
 
         {/* Contact CTA */}
         <div className="text-center mt-16 fade-in">
           <div className="glass-card rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              ต้องการสินค้าเฉพาะ หรือสั่งในจำนวนมาก?
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              เรามีสินค้าหลากหลายมากกว่าที่แสดง และรับผลิตตามออเดอร์พิเศษ
-            </p>
+            <h3 className="text-2xl font-bold text-foreground mb-4">ต้องการสินค้าเฉพาะ หรือสั่งในจำนวนมาก?</h3>
+            <p className="text-muted-foreground mb-6">เรามีสินค้าหลากหลายมากกว่าที่แสดง และรับผลิตตามออเดอร์พิเศษ</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:0819222884" className="contact-btn phone-btn">
-                โทรสอบถาม 081-922-2884
-              </a>
-              <a 
-                href="https://line.me/R/ti/p/0819222884"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="contact-btn line-btn"
-              >
-                Line สอบถาม
-              </a>
+              <a href="tel:0819222884" className="contact-btn phone-btn">โทรสอบถาม 081-922-2884</a>
+              <a href="https://line.me/R/ti/p/0819222884" target="_blank" rel="noopener noreferrer" className="contact-btn line-btn">Line สอบถาม</a>
             </div>
           </div>
+          <p className="mt-4 text-xs text-muted-foreground">
+            *รูปภาพเป็นภาพประกอบจากแหล่งสาธารณะ (Unsplash Source)
+          </p>
         </div>
       </div>
     </section>
