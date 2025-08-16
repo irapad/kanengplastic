@@ -20,7 +20,7 @@ const About = () => {
     {
       icon: Truck,
       title: "ส่งทั่วประเทศ",
-      description: "บริการส่งด่วนถึงที่"
+      description: "บริการส่งด่วนในจังหวัดสมุทรสาคร และส่งทั่วประเทศ"
     },
     {
       icon: Clock,
