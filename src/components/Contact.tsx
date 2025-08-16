@@ -111,26 +111,27 @@ const Contact = () => {
             
             {/* Map Placeholder */}
             <div className="bg-card rounded-xl overflow-hidden h-96 relative">
-              <img 
-                src={mapPlaceholder} 
-                alt="แผนที่ร้านกันเองพลาสติก บางน้ำจืด" 
-                className="w-full h-full object-cover"
+              <iframe
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                style={{ border: 0 }}
+                src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=กันเองพลาสติก+บางน้ำจืด+สมุทรปราการ&zoom=15&maptype=roadmap"
+                allowFullScreen
+                aria-hidden="false"
+                tabIndex={0}
+                title="กันเองพลาสติก บางน้ำจืด - Google Maps"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent flex items-end justify-end pr-4 pb-4">
-                <div className="text-right text-white bg-blue-600/90 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg border border-white/20 transform transition-all duration-300 hover:scale-105 animate-fade-in">
-                  <div className="flex items-center space-x-2">
-                    <MapPin className="w-5 h-5 text-white" />
-                    <span className="text-sm font-medium">ดูใน Google Maps</span>
-                  </div>
-                  <a 
-                    href="https://share.google/QodcxC1Nw4b3YxXtk" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-xs text-blue-100 hover:text-white transition-colors underline"
-                  >
-                    เปิดแผนที่
-                  </a>
-                </div>
+              <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg">
+                <a 
+                  href="https://share.google/QodcxC1Nw4b3YxXtk" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors text-sm font-medium"
+                >
+                  <MapPin className="w-4 h-4" />
+                  <span>เปิดใน Google Maps</span>
+                </a>
               </div>
             </div>
 
