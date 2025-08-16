@@ -60,7 +60,7 @@ const Contact = () => {
                   <h4 className="font-semibold text-card-foreground">ที่ตั้งร้าน</h4>
                   <p className="text-muted-foreground">บางน้ำจืด สมุทรปราการ</p>
                   <a 
-                    href="https://maps.app.goo.gl/7rxFdWgps65RmmZE9?g_st=ipc" 
+                    href="https://share.google/QodcxC1Nw4b3YxXtk" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary/80 text-sm"
@@ -115,7 +115,7 @@ const Contact = () => {
                 <h4 className="text-xl font-semibold mb-2">กันเองพลาสติก บางน้ำจืด</h4>
                 <p className="text-muted-foreground mb-4">บางน้ำจืด สมุทรปราการ</p>
                 <a 
-                  href="https://maps.app.goo.gl/7rxFdWgps65RmmZE9?g_st=ipc" 
+                  href="https://share.google/QodcxC1Nw4b3YxXtk" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="location-btn"
