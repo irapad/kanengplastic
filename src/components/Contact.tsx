@@ -1,5 +1,5 @@
 import { Phone, MessageCircle, MapPin, Clock, Mail, Truck } from "lucide-react";
-import mapPlaceholder from "../assets/map-placeholder.jpg";
+import mapPlaceholder from "../assets/google-map-real.jpg";
 
 const Contact = () => {
   return (
@@ -116,18 +116,18 @@ const Contact = () => {
                 alt="แผนที่ร้านกันเองพลาสติก บางน้ำจืด" 
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <MapPin className="w-16 h-16 mx-auto mb-4" />
-                  <h4 className="text-xl font-semibold mb-2">กันเองพลาสติก บางน้ำจืด</h4>
-                  <p className="mb-4">บางน้ำจืด สมุทรปราการ</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent flex items-end justify-center pb-6">
+                <div className="text-center text-white bg-black/30 backdrop-blur-sm rounded-lg p-4">
+                  <MapPin className="w-8 h-8 mx-auto mb-2 text-red-500" />
+                  <h4 className="text-lg font-semibold mb-1">กันเองพลาสติก บางน้ำจืด</h4>
+                  <p className="text-sm mb-3 text-gray-200">บางน้ำจืด สมุทรปราการ</p>
                   <a 
                     href="https://share.google/QodcxC1Nw4b3YxXtk" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="location-btn"
+                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
                   >
-                    เปิดแผนที่ใน Google Maps
+                    เปิดใน Google Maps
                   </a>
                 </div>
               </div>
