@@ -1,5 +1,5 @@
 import { Phone, MessageCircle, MapPin, Clock, Mail, Truck } from "lucide-react";
-import mapPlaceholder from "../assets/google-map-real.jpg";
+import mapPlaceholder from "../assets/google-maps-authentic.jpg";
 
 const Contact = () => {
   return (
@@ -116,24 +116,19 @@ const Contact = () => {
                 alt="แผนที่ร้านกันเองพลาสติก บางน้ำจืด" 
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent flex items-end justify-center pb-8 group">
-                <div className="text-center text-white bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-2xl transform transition-all duration-300 hover:scale-105 hover:bg-white/15 animate-fade-in">
-                  <div className="relative">
-                    <MapPin className="w-10 h-10 mx-auto mb-3 text-red-400 drop-shadow-lg animate-pulse" />
-                    <div className="absolute -inset-1 bg-red-400/20 rounded-full blur-sm"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent flex items-end justify-end pr-4 pb-4">
+                <div className="text-right text-white bg-blue-600/90 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg border border-white/20 transform transition-all duration-300 hover:scale-105 animate-fade-in">
+                  <div className="flex items-center space-x-2">
+                    <MapPin className="w-5 h-5 text-white" />
+                    <span className="text-sm font-medium">ดูใน Google Maps</span>
                   </div>
-                  <h4 className="text-xl font-bold mb-2 drop-shadow-md">กันเองพลาสติก บางน้ำจืด</h4>
-                  <p className="text-sm mb-4 text-gray-100 font-medium">บางน้ำจืด สมุทรปราการ</p>
                   <a 
                     href="https://share.google/QodcxC1Nw4b3YxXtk" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover-scale"
+                    className="text-xs text-blue-100 hover:text-white transition-colors underline"
                   >
-                    <span>เปิดใน Google Maps</span>
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
+                    เปิดแผนที่
                   </a>
                 </div>
               </div>
