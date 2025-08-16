@@ -18,8 +18,13 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div className="flex items-center">
-            <h1 className="text-xl md:text-2xl font-bold text-primary">
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/a97b4dce-8c29-4c3c-b382-5e355bd8b02f.png" 
+              alt="กันเองพลาสติก บางน้ำจืด Logo" 
+              className="h-8 md:h-10 w-auto"
+            />
+            <h1 className="text-lg md:text-xl font-bold text-primary">
               กันเองพลาสติก บางน้ำจืด
             </h1>
           </div>
