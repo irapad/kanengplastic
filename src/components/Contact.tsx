@@ -1,9 +1,7 @@
 import { Phone, MessageCircle, MapPin, Clock, Mail, Truck } from "lucide-react";
 import mapPlaceholder from "../assets/google-maps-authentic.jpg";
-
 const Contact = () => {
-  return (
-    <section id="contact" className="section-container bg-background">
+  return <section id="contact" className="section-container bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -42,12 +40,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-card-foreground">Line ID</h4>
                   <p className="text-muted-foreground">เพิ่มเพื่อนผ่านเบอร์โทร 081-922-2884</p>
-                  <a 
-                    href="https://line.me/R/ti/p/0819222884" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-green-600 hover:text-green-600/80 text-sm"
-                  >
+                  <a href="https://line.me/R/ti/p/0819222884" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-600/80 text-sm">
                     เพิ่มเพื่อน Line →
                   </a>
                 </div>
@@ -60,12 +53,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-card-foreground">ที่ตั้งร้าน</h4>
                   <p className="text-muted-foreground">บางน้ำจืด สมุทรปราการ</p>
-                  <a 
-                    href="https://share.google/QodcxC1Nw4b3YxXtk" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-primary hover:text-primary/80 text-sm"
-                  >
+                  <a href="https://share.google/QodcxC1Nw4b3YxXtk" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 text-sm">
                     ดูแผนที่ →
                   </a>
                 </div>
@@ -111,27 +99,11 @@ const Contact = () => {
             
             {/* Map Placeholder */}
             <div className="bg-card rounded-xl overflow-hidden h-96 relative">
-              <iframe
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                style={{ border: 0 }}
-                src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=กันเองพลาสติก+บางน้ำจืด+สมุทรปราการ&zoom=15&maptype=roadmap"
-                allowFullScreen
-                aria-hidden="false"
-                tabIndex={0}
-                title="กันเองพลาสติก บางน้ำจืด - Google Maps"
-              />
+              <iframe width="100%" height="100%" frameBorder="0" style={{
+              border: 0
+            }} src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=กันเองพลาสติก+บางน้ำจืด+สมุทรปราการ&zoom=15&maptype=roadmap" allowFullScreen aria-hidden="false" tabIndex={0} title="กันเองพลาสติก บางน้ำจืด - Google Maps" />
               <div className="absolute top-4 right-4">
-                <a 
-                  href="https://share.google/QodcxC1Nw4b3YxXtk" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg hover:bg-white hover:scale-110 transition-all duration-300 group"
-                  title="เปิดใน Google Maps"
-                >
-                  <MapPin className="w-5 h-5 text-red-500 group-hover:text-red-600" />
-                </a>
+                
               </div>
             </div>
 
@@ -143,20 +115,12 @@ const Contact = () => {
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <a
-                  href="tel:0819222884"
-                  className="phone-btn flex items-center justify-center space-x-2"
-                >
+                <a href="tel:0819222884" className="phone-btn flex items-center justify-center space-x-2">
                   <Phone className="w-5 h-5" />
                   <span>โทรเลย</span>
                 </a>
                 
-                <a
-                  href="https://line.me/R/ti/p/0819222884"
-                  className="line-btn flex items-center justify-center space-x-2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://line.me/R/ti/p/0819222884" className="line-btn flex items-center justify-center space-x-2" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5" />
                   <span>แชท Line</span>
                 </a>
@@ -165,8 +129,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
