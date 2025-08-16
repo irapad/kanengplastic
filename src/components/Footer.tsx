@@ -39,26 +39,6 @@ const Footer = () => {
           </div>
 
 
-          {/* Contact Info */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-card-foreground">ติดต่อเรา</h4>
-            <div className="space-y-3">
-              <a href="tel:0819222884" className="flex items-center space-x-3 text-sm text-muted-foreground hover:text-primary transition-colors">
-                <Phone className="w-4 h-4" />
-                <span>081-922-2884</span>
-              </a>
-              
-              <a href="https://line.me/R/ti/p/0819222884" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 text-sm text-muted-foreground hover:text-green-600 transition-colors">
-                <MessageCircle className="w-4 h-4" />
-                <span>Line: 081-922-2884</span>
-              </a>
-              
-              <a href="https://share.google/QodcxC1Nw4b3YxXtk" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 text-sm text-muted-foreground hover:text-primary transition-colors">
-                <MapPin className="w-4 h-4" />
-                <span>บางน้ำจืด สมุทรปราการ</span>
-              </a>
-            </div>
-          </div>
         </div>
 
         {/* Bottom Bar */}
