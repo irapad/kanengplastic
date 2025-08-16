@@ -160,7 +160,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <a 
-                    href="https://share.google/QodcxC1Nw4b3YxXtk" 
+                    href="https://maps.app.goo.gl/tuiNyTepGDRAR7v57" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-lg flex items-center justify-center transition-colors group"
