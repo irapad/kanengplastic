@@ -6,7 +6,6 @@ import plasticBagFood from "@/assets/plastic-bag-food.jpg";
 import plasticBagHDPE from "@/assets/plastic-bag-hdpe.jpg";
 import tapeOPP from "@/assets/tape-opp.jpg";
 import sealingMachine from "@/assets/sealing-machine.jpg";
-import strappingBand from "@/assets/strapping-band.jpg";
 
 const ProductShowcase = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -112,7 +111,7 @@ const ProductShowcase = () => {
       description: "สายรัดพลาสติก (PP Band) สำหรับรัดกล่อง",
       sizes: "หน้ากว้าง: 9 มม., 12 มม., 15 มม.",
       features: "สายรัดพลาสติก แข็งแรง เหมาะสำหรับรัดกล่อง",
-      image: strappingBand
+      image: tapeOPP
     },
     {
       id: 12,
