@@ -1,8 +1,6 @@
 import { Phone, MessageCircle, MapPin, Clock } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-card border-t border-border">
+  return <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -17,7 +15,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Clock className="w-4 h-4" />
-              <span>จันทร์-เสาร์ 08:00-18:00 น.</span>
+              <span>จันทร์-เสาร์ 08:00-17:00 น.</span>
             </div>
           </div>
 
@@ -45,30 +43,17 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-card-foreground">ติดต่อเรา</h4>
             <div className="space-y-3">
-              <a 
-                href="tel:0819222884"
-                className="flex items-center space-x-3 text-sm text-muted-foreground hover:text-primary transition-colors"
-              >
+              <a href="tel:0819222884" className="flex items-center space-x-3 text-sm text-muted-foreground hover:text-primary transition-colors">
                 <Phone className="w-4 h-4" />
                 <span>081-922-2884</span>
               </a>
               
-              <a 
-                href="https://line.me/R/ti/p/0819222884"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-3 text-sm text-muted-foreground hover:text-green-600 transition-colors"
-              >
+              <a href="https://line.me/R/ti/p/0819222884" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 text-sm text-muted-foreground hover:text-green-600 transition-colors">
                 <MessageCircle className="w-4 h-4" />
                 <span>Line: 081-922-2884</span>
               </a>
               
-              <a 
-                href="https://maps.app.goo.gl/7rxFdWgps65RmmZE9?g_st=ipc"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-3 text-sm text-muted-foreground hover:text-primary transition-colors"
-              >
+              <a href="https://maps.app.goo.gl/7rxFdWgps65RmmZE9?g_st=ipc" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 text-sm text-muted-foreground hover:text-primary transition-colors">
                 <MapPin className="w-4 h-4" />
                 <span>บางน้ำจืด สมุทรปราการ</span>
               </a>
@@ -97,8 +82,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
