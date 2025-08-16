@@ -80,7 +80,7 @@ const Contact = () => {
               <div className="space-y-2 text-muted-foreground">
                 <div className="flex justify-between">
                   <span>จันทร์ - เสาร์</span>
-                  <span>08:00 - 18:00 น.</span>
+                  <span>08.00น.-17.00น.</span>
                 </div>
                 <div className="flex justify-between">
                   <span>อาทิตย์</span>
