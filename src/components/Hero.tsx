@@ -23,6 +23,17 @@ const Hero = () => {
             <span className="font-medium">ประสบการณ์ 40+ ปี</span>
           </div>
 
+          {/* Special Delivery Service */}
+          <div className="glass-card rounded-xl p-4 mb-8 max-w-2xl mx-auto fade-in">
+            <div className="flex items-center justify-center mb-2">
+              <span className="text-2xl mr-2">🚚</span>
+              <span className="font-bold text-primary">บริการจัดส่งด่วนพิเศษ</span>
+            </div>
+            <p className="text-sm md:text-base text-foreground">
+              "จัดส่งภายในวันเดียว! สำหรับลูกค้าในพื้นที่จังหวัดสมุทรสาคร สั่งเช้า รับเย็น พร้อมบริการจัดส่งฟรีถึงหน้าบ้าน"
+            </p>
+          </div>
+
           {/* Value Propositions */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             <div className="glass-card rounded-xl p-4 fade-in stagger-1">
