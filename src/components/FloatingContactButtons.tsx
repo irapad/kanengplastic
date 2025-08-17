@@ -1,4 +1,5 @@
 import { Phone } from "lucide-react";
+import lineIcon from "/lovable-uploads/6d02b08a-f479-4c32-9829-e50da2f38d3b.png";
 
 const FloatingContactButtons = () => {
   return (
@@ -21,7 +22,7 @@ const FloatingContactButtons = () => {
         title="แชท Line: 081-922-2884"
       >
         <img 
-          src="/lovable-uploads/6d02b08a-f479-4c32-9829-e50da2f38d3b.png" 
+          src={lineIcon} 
           alt="Line"
           className="w-6 h-6 group-hover:animate-pulse"
         />
