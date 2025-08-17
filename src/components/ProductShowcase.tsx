@@ -22,7 +22,7 @@ import uploadedTurtleBag from "/lovable-uploads/4209839a-c40c-4c78-9909-00f9ca7c
  */
 
 const IMG = {
-  ppHot: uploadedTurtleBag, // ใช้รูปที่ผู้ใช้อัปโหลดมา
+  ppHot: "/lovable-uploads/55dd2354-390b-4316-a894-51c350244e85.png", // ใช้รูปที่ผู้ใช้อัปโหลดมา
   llFood: llFoodGradeBags,
   hdpe: hdpeBagsPackage,
   opp: oppCellophane,
