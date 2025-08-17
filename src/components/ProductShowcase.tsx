@@ -53,7 +53,7 @@ const ProductShowcase = () => {
     {
       id: 2,
       category: "ถุงพลาสติก",
-      name: "ถุงเย็น LL ฟู้ดเกรด (ตราปลาคราฟ)",
+      name: "ถุงเย็น FoodGrade",
       description: "LLDPE เนื้อเหนียวยืดหยุ่น ทนเย็น",
       sizes: "5×8″, 6×9″, 8×12″, 9×14″, 12×18″",
       features: "Food Grade, เหมาะแช่แข็ง/ใส่อาหารทั่วไป ไม่กรอบแตก",
