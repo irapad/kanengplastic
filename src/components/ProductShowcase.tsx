@@ -23,7 +23,7 @@ import uploadedTurtleBag from "/lovable-uploads/4209839a-c40c-4c78-9909-00f9ca7c
 
 const IMG = {
   ppHot: "/lovable-uploads/55dd2354-390b-4316-a894-51c350244e85.png", // ใช้รูปที่ผู้ใช้อัปโหลดมา
-  llFood: llFoodGradeBags,
+  llFood: "/lovable-uploads/45d73e35-a9c1-4561-960d-bd044acfbc20.png", // ใช้รูป ถุงเย็น FoodGrade ที่ผู้ใช้อัปโหลดมา
   hdpe: "/lovable-uploads/136a6653-ad18-44cd-b80f-4d78feff713a.png", // ใช้รูป HDPE ที่ผู้ใช้อัปโหลดมา
   opp: "/lovable-uploads/b3599718-a9fa-42d7-aa4a-3ed27b8dcfce.png", // ใช้รูป OPP ที่ผู้ใช้อัปโหลดมา
   carry: shoppingCarryBags,
