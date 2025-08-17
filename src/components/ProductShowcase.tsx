@@ -24,7 +24,7 @@ import uploadedTurtleBag from "/lovable-uploads/4209839a-c40c-4c78-9909-00f9ca7c
 const IMG = {
   ppHot: "/lovable-uploads/55dd2354-390b-4316-a894-51c350244e85.png", // ใช้รูปที่ผู้ใช้อัปโหลดมา
   llFood: llFoodGradeBags,
-  hdpe: hdpeBagsPackage,
+  hdpe: "/lovable-uploads/136a6653-ad18-44cd-b80f-4d78feff713a.png", // ใช้รูป HDPE ที่ผู้ใช้อัปโหลดมา
   opp: oppCellophane,
   carry: shoppingCarryBags,
   roll: ldpePlasticRoll,
