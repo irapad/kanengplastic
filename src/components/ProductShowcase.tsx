@@ -1,5 +1,12 @@
 import { useState } from "react";
 import { Search, Package, Info } from "lucide-react";
+import plasticBagClear from "../assets/plastic-bag-clear.jpg";
+import plasticBagFood from "../assets/plastic-bag-food.jpg";
+import plasticBagHdpe from "../assets/plastic-bag-hdpe.jpg";
+import plasticBagWhite from "../assets/plastic-bag-white.jpg";
+import tapeOpp from "../assets/tape-opp.jpg";
+import strappingBand from "../assets/strapping-band.jpg";
+import sealingMachine from "../assets/sealing-machine.jpg";
 
 /**
  * ✅ สิ่งที่อัปเดตให้แล้ว
@@ -10,17 +17,17 @@ import { Search, Package, Info } from "lucide-react";
  */
 
 const IMG = {
-  ppHot: "https://source.unsplash.com/800x600/?plastic,bag,clear",
-  llFood: "https://source.unsplash.com/800x600/?food,plastic,bag",
-  hdpe: "https://source.unsplash.com/800x600/?hdpe,plastic,bag",
-  opp: "https://source.unsplash.com/800x600/?opp,bag,cellophane",
-  carry: "https://source.unsplash.com/800x600/?shopping,plastic,bag",
-  roll: "https://source.unsplash.com/800x600/?plastic,roll,ldpe",
-  tape: "https://source.unsplash.com/800x600/?packing,tape",
-  stretch: "https://source.unsplash.com/800x600/?stretch,film,pallet",
-  strap: "https://source.unsplash.com/800x600/?pp,strap,banding",
-  bubble: "https://source.unsplash.com/800x600/?bubble,wrap",
-  sealer: "https://source.unsplash.com/800x600/?impulse,sealer",
+  ppHot: plasticBagClear,
+  llFood: plasticBagFood,
+  hdpe: plasticBagHdpe,
+  opp: plasticBagClear,
+  carry: plasticBagWhite,
+  roll: plasticBagWhite,
+  tape: tapeOpp,
+  stretch: plasticBagClear,
+  strap: strappingBand,
+  bubble: plasticBagWhite,
+  sealer: sealingMachine,
 };
 
 const ProductShowcase = () => {
