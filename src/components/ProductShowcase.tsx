@@ -25,7 +25,7 @@ const IMG = {
   ppHot: "/lovable-uploads/55dd2354-390b-4316-a894-51c350244e85.png", // ใช้รูปที่ผู้ใช้อัปโหลดมา
   llFood: llFoodGradeBags,
   hdpe: "/lovable-uploads/136a6653-ad18-44cd-b80f-4d78feff713a.png", // ใช้รูป HDPE ที่ผู้ใช้อัปโหลดมา
-  opp: oppCellophane,
+  opp: "/lovable-uploads/b3599718-a9fa-42d7-aa4a-3ed27b8dcfce.png", // ใช้รูป OPP ที่ผู้ใช้อัปโหลดมา
   carry: shoppingCarryBags,
   roll: ldpePlasticRoll,
   tape: tapeOpp,
