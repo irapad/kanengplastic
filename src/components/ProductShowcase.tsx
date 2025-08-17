@@ -1,12 +1,17 @@
 import { useState } from "react";
 import { Search, Package, Info } from "lucide-react";
-import plasticBagClear from "../assets/plastic-bag-clear.jpg";
-import plasticBagFood from "../assets/plastic-bag-food.jpg";
-import plasticBagHdpe from "../assets/plastic-bag-hdpe.jpg";
-import plasticBagWhite from "../assets/plastic-bag-white.jpg";
+import plasticBagTurtle from "../assets/plastic-bag-turtle-brand.jpg";
+import llFoodGradeBags from "../assets/ll-food-grade-bags.jpg";
+import hdpeBagsPackage from "../assets/hdpe-bags-package.jpg";
+import oppCellophane from "../assets/opp-cellophane-bags.jpg";
+import shoppingCarryBags from "../assets/shopping-carry-bags.jpg";
+import ldpePlasticRoll from "../assets/ldpe-plastic-roll.jpg";
 import tapeOpp from "../assets/tape-opp.jpg";
-import strappingBand from "../assets/strapping-band.jpg";
-import sealingMachine from "../assets/sealing-machine.jpg";
+import stretchWrapFilm from "../assets/stretch-wrap-film.jpg";
+import ppStrappingBand from "../assets/pp-strapping-band.jpg";
+import bubbleWrapRoll from "../assets/bubble-wrap-roll.jpg";
+import impulseSealerMachine from "../assets/impulse-sealer-machine.jpg";
+import uploadedTurtleBag from "/lovable-uploads/4209839a-c40c-4c78-9909-00f9ca7c6e91.png";
 
 /**
  * ✅ สิ่งที่อัปเดตให้แล้ว
@@ -17,17 +22,17 @@ import sealingMachine from "../assets/sealing-machine.jpg";
  */
 
 const IMG = {
-  ppHot: plasticBagClear,
-  llFood: plasticBagFood,
-  hdpe: plasticBagHdpe,
-  opp: plasticBagClear,
-  carry: plasticBagWhite,
-  roll: plasticBagWhite,
+  ppHot: uploadedTurtleBag, // ใช้รูปที่ผู้ใช้อัปโหลดมา
+  llFood: llFoodGradeBags,
+  hdpe: hdpeBagsPackage,
+  opp: oppCellophane,
+  carry: shoppingCarryBags,
+  roll: ldpePlasticRoll,
   tape: tapeOpp,
-  stretch: plasticBagClear,
-  strap: strappingBand,
-  bubble: plasticBagWhite,
-  sealer: sealingMachine,
+  stretch: stretchWrapFilm,
+  strap: ppStrappingBand,
+  bubble: bubbleWrapRoll,
+  sealer: impulseSealerMachine,
 };
 
 const ProductShowcase = () => {
