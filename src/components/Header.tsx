@@ -18,15 +18,21 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/a97b4dce-8c29-4c3c-b382-5e355bd8b02f.png" 
-              alt="กันเองพลาสติก บางน้ำจืด Logo" 
-              className="h-8 md:h-10 w-auto"
-            />
-            <h1 className="text-lg md:text-xl font-bold text-primary">
-              กันเองพลาสติก บางน้ำจืด
-            </h1>
+          <div className="flex items-center space-x-4 group cursor-pointer transition-all duration-300 hover:scale-105">
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/a97b4dce-8c29-4c3c-b382-5e355bd8b02f.png" 
+                alt="กันเองพลาสติก บางน้ำจืด Logo" 
+                className="h-10 md:h-12 w-auto filter drop-shadow-lg transition-all duration-300 group-hover:drop-shadow-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl -z-10"></div>
+            </div>
+            <div className="flex flex-col">
+              <h1 className="text-lg md:text-xl font-bold bg-gradient-to-r from-primary via-primary-glow to-secondary bg-clip-text text-transparent">
+                กันเองพลาสติก
+              </h1>
+              <span className="text-xs md:text-sm text-muted-foreground font-medium">บางน้ำจืด</span>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
