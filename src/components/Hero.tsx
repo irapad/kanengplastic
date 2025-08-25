@@ -1,8 +1,15 @@
 import { Phone, MessageCircle, MapPin, Star, Truck, Shield } from "lucide-react";
+import factoryBg from "../assets/factory-warehouse-bg.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="hero-bg min-h-screen flex items-center">
+    <section 
+      id="home" 
+      className="hero-bg min-h-screen flex items-center relative bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(${factoryBg})`
+      }}
+    >
       <div className="container mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto relative z-10">
           {/* Main Title */}
