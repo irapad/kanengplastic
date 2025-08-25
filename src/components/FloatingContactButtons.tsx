@@ -1,5 +1,5 @@
 import { Phone } from "lucide-react";
-import lineIcon from "/lovable-uploads/9f0a0826-631c-4241-b3a2-4c6cfe387b72.png";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const FloatingContactButtons = () => {
   return (
@@ -21,11 +21,7 @@ const FloatingContactButtons = () => {
         className="group w-16 h-16 bg-gradient-to-br from-green-500 via-green-600 to-green-700 rounded-full flex items-center justify-center shadow-2xl shadow-green-500/40 hover:shadow-3xl hover:shadow-green-400/60 transition-all duration-500 hover:scale-125 hover:rotate-12 animate-pulse border-2 border-green-400/30 hover:border-green-300/60"
         title="แชท LINE: tee4828"
       >
-        <img 
-          src={lineIcon} 
-          alt="Line"
-          className="w-6 h-6 group-hover:animate-pulse"
-        />
+        <i className="bi bi-line text-white text-2xl group-hover:animate-pulse"></i>
       </a>
     </div>
   );
