@@ -30,7 +30,7 @@ const IMG = {
   roll: ldpePlasticRoll,
   tape: tapeOpp,
   stretch: stretchWrapFilm,
-  strap: "/lovable-uploads/6d02b08a-f479-4c32-9829-e50da2f38d3b.png", // ใช้รูป สายรัด PP ที่ผู้ใช้อัปโหลดมา
+  strap: "/lovable-uploads/aa5b6748-6055-4fd4-bdd7-c79ebce56f27.png", // ใช้รูป สายรัด PP ที่ผู้ใช้อัปโหลดมา
   bubble: bubbleWrapRoll,
   sealer: impulseSealerMachine,
 };
