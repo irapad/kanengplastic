@@ -41,6 +41,17 @@ const ProductShowcase = () => {
 
   const products = [
     {
+      id: 0,
+      category: "ถุงพลาสติก",
+      name: "แคตตาลอก ถุงพิมพ์ลาย",
+      description: "ถุงพลาสติกพิมพ์ลาย โลโก้ ตามสั่ง คุณภาพสูง",
+      sizes: "ทุกขนาดตามสั่ง, MOQ ตั้งแต่ 1,000 ใบ",
+      features: "พิมพ์ได้ 1-8 สี, ผลิตตามแบบ, มีบริการออกแบบ",
+      image: IMG.ppHot, // ใช้รูปตัวอย่างชั่วคราว
+      popular: true,
+      isCustom: true,
+    },
+    {
       id: 1,
       category: "ถุงพลาสติก",
       name: "ถุงร้อน PP ใส (ตรามังกรเต่า)",
@@ -244,7 +255,16 @@ const ProductShowcase = () => {
                 </div>
 
                 {/* CTA Button */}
-                <button className="w-full contact-btn phone-btn text-sm py-2 mt-4">สอบถามราคา</button>
+                {product.isCustom ? (
+                  <div className="space-y-2 mt-4">
+                    <button className="w-full contact-btn phone-btn text-sm py-2">สอบถามราคา</button>
+                    <button className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-lg py-2 text-sm transition-colors">
+                      ดูตัวอย่างเพิ่มเติม
+                    </button>
+                  </div>
+                ) : (
+                  <button className="w-full contact-btn phone-btn text-sm py-2 mt-4">สอบถามราคา</button>
+                )}
               </div>
             </div>
           ))}
