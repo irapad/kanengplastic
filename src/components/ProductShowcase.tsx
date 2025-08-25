@@ -173,7 +173,7 @@ const ProductShowcase = () => {
         {/* Search & Filter */}
         <div className="mb-8 space-y-4 fade-in">
           <div className="relative max-w-md mx-auto">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-primary w-5 h-5 animate-pulse" />
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-black w-5 h-5 animate-pulse" />
             <input
               type="text"
               placeholder="ค้นหาสินค้า..."
