@@ -289,12 +289,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: fade-in 1.2s ease-out;
-    text-shadow: 0 0 40px rgba(0,0,0,0.1);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.6);
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.9));
   }
   
   .hero-subtitle {
-    @apply text-2xl md:text-4xl text-muted-foreground font-medium;
+    @apply text-2xl md:text-4xl text-white font-bold;
     animation: slide-up 1s ease-out 0.3s both;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
   }
   
   .feature-badge {

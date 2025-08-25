@@ -13,47 +13,47 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto relative z-10">
           {/* Main Title */}
-          <h1 className="hero-title mb-4">
-            <span className="text-primary">กันเองพลาสติก</span>
+          <h1 className="hero-title mb-4 text-shadow-lg">
+            <span className="text-primary drop-shadow-2xl">กันเองพลาสติก</span>
             <br />
-            <span className="text-foreground">บางน้ำจืด</span>
+            <span className="text-white drop-shadow-2xl">บางน้ำจืด</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="hero-subtitle mb-6">
+          <p className="hero-subtitle mb-6 text-white drop-shadow-xl font-bold">
             ผู้เชี่ยวชาญด้านถุงพลาสติกและบรรจุภัณฑ์
           </p>
 
           {/* Experience Badge */}
-          <div className="feature-badge mb-8">
+          <div className="feature-badge mb-8 bg-white/30 border-white/40">
             <Star className="w-5 h-5 text-primary float-animation" />
-            <span className="font-medium">ประสบการณ์ 40+ ปี</span>
+            <span className="font-bold text-foreground drop-shadow-lg">ประสบการณ์ 40+ ปี</span>
           </div>
 
           {/* Special Delivery Service */}
-          <div className="glass-card rounded-xl p-4 mb-8 max-w-2xl mx-auto fade-in">
+          <div className="glass-card rounded-xl p-4 mb-8 max-w-2xl mx-auto fade-in bg-white/25 border-white/30">
             <div className="flex items-center justify-center mb-2">
               <span className="text-2xl mr-2">🚚</span>
-              <span className="font-bold text-primary">บริการจัดส่งด่วนพิเศษ</span>
+              <span className="font-bold text-primary drop-shadow-lg text-lg">บริการจัดส่งด่วนพิเศษ</span>
             </div>
-            <p className="text-sm md:text-base text-foreground">
+            <p className="text-sm md:text-base text-foreground font-medium drop-shadow-md">
               "จัดส่งภายในวันเดียว! สำหรับลูกค้าในพื้นที่จังหวัดสมุทรสาคร สั่งเช้า รับเย็น พร้อมบริการจัดส่งถึงหน้าบ้าน"
             </p>
           </div>
 
           {/* Value Propositions */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-            <div className="glass-card rounded-xl p-4 fade-in stagger-1">
+            <div className="glass-card rounded-xl p-4 fade-in stagger-1 bg-white/25 border-white/30">
               <Shield className="w-6 h-6 text-primary mx-auto mb-2" />
-              <span className="text-xs md:text-sm block text-center">คุณภาพ ราคาส่ง</span>
+              <span className="text-xs md:text-sm block text-center font-semibold text-foreground drop-shadow-md">คุณภาพ ราคาส่ง</span>
             </div>
-            <div className="glass-card rounded-xl p-4 fade-in stagger-2">
+            <div className="glass-card rounded-xl p-4 fade-in stagger-2 bg-white/25 border-white/30">
               <Truck className="w-6 h-6 text-primary mx-auto mb-2" />
-              <span className="text-xs md:text-sm block text-center">ส่งทั่วประเทศ</span>
+              <span className="text-xs md:text-sm block text-center font-semibold text-foreground drop-shadow-md">ส่งทั่วประเทศ</span>
             </div>
-            <div className="glass-card rounded-xl p-4 fade-in stagger-3">
+            <div className="glass-card rounded-xl p-4 fade-in stagger-3 bg-white/25 border-white/30">
               <Star className="w-6 h-6 text-primary mx-auto mb-2" />
-              <span className="text-xs md:text-sm block text-center">สินค้าครบครัน</span>
+              <span className="text-xs md:text-sm block text-center font-semibold text-foreground drop-shadow-md">สินค้าครบครัน</span>
             </div>
           </div>
 
