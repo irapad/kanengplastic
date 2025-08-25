@@ -6,10 +6,6 @@ const Hero = () => {
     <section 
       id="home" 
       className="min-h-screen flex items-center relative bg-gradient-to-br from-orange-50 via-green-50 to-orange-100"
-      style={{
-        backgroundImage: `linear-gradient(135deg, rgba(251, 146, 60, 0.1), rgba(34, 197, 94, 0.1), rgba(249, 115, 22, 0.15)), url(${factoryBg})`,
-        backgroundBlendMode: 'overlay'
-      }}
     >
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto space-y-8">
