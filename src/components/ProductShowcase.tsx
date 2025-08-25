@@ -173,13 +173,13 @@ const ProductShowcase = () => {
         {/* Search & Filter */}
         <div className="mb-8 space-y-4 fade-in">
           <div className="relative max-w-md mx-auto">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground w-4 h-4" />
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-primary w-5 h-5 animate-pulse" />
             <input
               type="text"
               placeholder="ค้นหาสินค้า..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-card/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+              className="w-full pl-12 pr-6 py-4 rounded-2xl border-2 border-primary/20 bg-gradient-to-r from-card/80 to-card/60 backdrop-blur-lg shadow-xl shadow-primary/10 focus:outline-none focus:ring-4 focus:ring-primary/30 focus:border-primary/50 focus:shadow-2xl focus:shadow-primary/20 transition-all duration-300 text-lg placeholder:text-muted-foreground/70 hover:shadow-lg hover:shadow-primary/15"
             />
           </div>
 
