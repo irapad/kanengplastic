@@ -26,7 +26,7 @@ const IMG = {
   llFood: "/lovable-uploads/e636e5b1-3813-422a-bf7e-29a10b16afe0.png", // ใช้รูป ถุงเย็น FoodGrade ที่ผู้ใช้อัปโหลดมา
   hdpe: "/lovable-uploads/136a6653-ad18-44cd-b80f-4d78feff713a.png", // ใช้รูป HDPE ที่ผู้ใช้อัปโหลดมา
   opp: "/lovable-uploads/b3599718-a9fa-42d7-aa4a-3ed27b8dcfce.png", // ใช้รูป OPP ที่ผู้ใช้อัปโหลดมา
-  carry: "/lovable-uploads/a91beaca-eebe-4749-9ff4-efcd7db1ed03.png", // ใช้รูป ถุงหิ้ว ที่ผู้ใช้อัปโหลดมา
+  carry: "/lovable-uploads/88bdf79f-3775-4350-a616-e977b252bdc9.png", // ใช้รูป ถุงหิ้ว ที่ผู้ใช้อัปโหลดมา
   roll: ldpePlasticRoll,
   tape: tapeOpp,
   stretch: stretchWrapFilm,
