@@ -1,5 +1,5 @@
 import { Phone } from "lucide-react";
-import lineIcon from "/lovable-uploads/6d02b08a-f479-4c32-9829-e50da2f38d3b.png";
+import lineIcon from "/lovable-uploads/9f0a0826-631c-4241-b3a2-4c6cfe387b72.png";
 
 const FloatingContactButtons = () => {
   return (
