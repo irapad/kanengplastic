@@ -179,7 +179,7 @@ const ProductShowcase = () => {
               placeholder="ค้นหาสินค้า..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-12 pr-6 py-4 rounded-2xl border-2 border-primary/20 bg-gradient-to-r from-card/80 to-card/60 backdrop-blur-lg shadow-xl shadow-primary/10 focus:outline-none focus:ring-4 focus:ring-primary/30 focus:border-primary/50 focus:shadow-2xl focus:shadow-primary/20 transition-all duration-300 text-lg placeholder:text-muted-foreground/70 hover:shadow-lg hover:shadow-primary/15"
+              className="w-full pl-12 pr-6 py-4 rounded-2xl border-2 border-gray-700 bg-gradient-to-r from-black/90 to-gray-900/90 backdrop-blur-lg shadow-xl shadow-black/20 focus:outline-none focus:ring-4 focus:ring-gray-600/50 focus:border-gray-500 focus:shadow-2xl focus:shadow-black/30 transition-all duration-300 text-lg text-white placeholder:text-gray-400 hover:shadow-lg hover:shadow-black/25"
             />
           </div>
 
