@@ -4,116 +4,111 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Earth-Friendly Minimal Design System for กันเองพลาสติก */
+/* Premium Green-Orange Design System - 10 Million Baht App */
 
 @layer base {
   :root {
-    /* Light earth-friendly base colors */
-    --background: 120 20% 98%;
-    --foreground: 120 10% 15%;
+    /* Premium base colors */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
 
     /* Card and surface colors */
-    --card: 120 20% 96%;
-    --card-foreground: 120 10% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
 
-    --popover: 120 20% 96%;
-    --popover-foreground: 120 10% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
 
-    /* Brand colors - Earth green accent */
-    --primary: 142 65% 45%;
-    --primary-foreground: 120 20% 98%;
-    --primary-glow: 142 65% 55%;
+    /* Premium Green Primary */
+    --primary: 142 76% 36%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --primary-glow: 142 76% 46%;
+    --primary-dark: 142 86% 26%;
 
-    /* Secondary surfaces */
-    --secondary: 120 15% 92%;
-    --secondary-foreground: 120 10% 20%;
+    /* Premium Orange Secondary */
+    --secondary: 24 95% 53%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-glow: 24 95% 63%;
+    --secondary-dark: 24 100% 43%;
 
     /* Muted elements */
-    --muted: 120 15% 94%;
-    --muted-foreground: 120 8% 45%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
     /* Accent colors */
-    --accent: 90 25% 88%;
-    --accent-foreground: 120 10% 20%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     /* Status colors */
     --destructive: 0 84% 60%;
-    --destructive-foreground: 120 20% 98%;
+    --destructive-foreground: 210 40% 98%;
     
-    --success: 142 76% 45%;
-    --success-foreground: 120 20% 98%;
+    --success: 142 76% 36%;
+    --success-foreground: 210 40% 98%;
 
     /* Border and input */
-    --border: 120 15% 88%;
-    --input: 120 15% 88%;
-    --ring: 142 65% 45%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 142 76% 36%;
 
     /* Design tokens */
-    --radius: 0.75rem;
+    --radius: 1rem;
     
-    /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(142 65% 45%), hsl(142 65% 55%));
-    --gradient-surface: linear-gradient(180deg, hsl(120 20% 98%), hsl(120 15% 95%));
-    --gradient-hero: linear-gradient(135deg, hsl(120 20% 98%), hsl(90 25% 95%));
+    /* Premium gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
+    --gradient-secondary: linear-gradient(135deg, hsl(24 95% 53%), hsl(24 95% 63%));
+    --gradient-hero: linear-gradient(135deg, hsl(142 76% 36% / 0.03), hsl(24 95% 53% / 0.03));
+    --gradient-premium: linear-gradient(135deg, hsl(142 76% 36%), hsl(24 95% 53%));
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
     
-    /* Shadows */
-    --shadow-elegant: 0 10px 40px -10px hsl(120 10% 20% / 0.15);
-    --shadow-glow: 0 0 40px hsl(142 65% 45% / 0.2);
-    --shadow-card: 0 4px 20px hsl(120 10% 20% / 0.08);
+    /* Premium shadows */
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --shadow-elegant: 0 20px 40px -12px rgb(0 0 0 / 0.15);
+    --shadow-glow-green: 0 0 40px hsl(142 76% 36% / 0.3);
+    --shadow-glow-orange: 0 0 40px hsl(24 95% 53% / 0.3);
     
-    /* Transitions */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Premium transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     --transition-elegant: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
-    /* Enhanced gradients */
-    --gradient-mesh: radial-gradient(circle at 20% 50%, hsl(142 65% 45% / 0.3) 0%, transparent 50%), 
-                     radial-gradient(circle at 80% 20%, hsl(90 25% 70% / 0.2) 0%, transparent 50%), 
-                     radial-gradient(circle at 40% 80%, hsl(142 65% 55% / 0.2) 0%, transparent 50%);
-    --gradient-card-hover: linear-gradient(135deg, hsl(120 20% 99%), hsl(142 65% 98%));
+    /* Premium mesh gradients */
+    --gradient-mesh: 
+      radial-gradient(circle at 20% 50%, hsl(142 76% 36% / 0.15) 0%, transparent 50%), 
+      radial-gradient(circle at 80% 20%, hsl(24 95% 53% / 0.15) 0%, transparent 50%), 
+      radial-gradient(circle at 40% 80%, hsl(142 76% 46% / 0.1) 0%, transparent 50%);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
-
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
+    --primary: 142 76% 46%;
     --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
+    --secondary: 24 95% 63%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
@@ -140,13 +135,14 @@
 }
 
 @layer components {
-  /* Enhanced Contact Action Buttons */
+  /* Premium Contact Action Buttons */
   .contact-btn {
-    @apply inline-flex items-center justify-center px-8 py-4 rounded-xl font-medium;
-    @apply text-sm md:text-base relative overflow-hidden;
+    @apply inline-flex items-center justify-center px-8 py-4 rounded-2xl font-semibold;
+    @apply text-sm md:text-base relative overflow-hidden border-2;
     transition: var(--transition-elegant);
-    box-shadow: var(--shadow-card);
-    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(20px);
+    position: relative;
   }
   
   .contact-btn::before {
@@ -156,7 +152,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
     transition: var(--transition-smooth);
   }
   
@@ -165,51 +161,55 @@
   }
   
   .contact-btn:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: var(--shadow-elegant);
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: var(--shadow-2xl);
   }
   
   .phone-btn {
-    @apply text-primary-foreground relative;
+    @apply text-primary-foreground;
     background: var(--gradient-primary);
-    border: 1px solid hsl(var(--primary) / 0.3);
+    border-color: hsl(var(--primary));
   }
   
   .phone-btn:hover {
-    background: linear-gradient(135deg, hsl(142 70% 50%), hsl(142 70% 60%));
-    box-shadow: var(--shadow-glow);
+    background: linear-gradient(135deg, hsl(var(--primary-dark)), hsl(var(--primary)));
+    box-shadow: var(--shadow-glow-green);
+    border-color: hsl(var(--primary-glow));
   }
   
   .line-btn {
-    @apply text-white relative;
+    @apply text-white;
     background: linear-gradient(135deg, #00C851, #28a745);
-    border: 1px solid rgba(0, 200, 81, 0.3);
+    border-color: #00C851;
   }
   
   .line-btn:hover {
     background: linear-gradient(135deg, #28a745, #00C851);
-    box-shadow: 0 0 40px rgba(0, 200, 81, 0.4);
+    box-shadow: 0 0 50px rgba(0, 200, 81, 0.5);
+    border-color: #28a745;
   }
   
   .location-btn {
-    @apply text-secondary-foreground relative;
-    background: var(--gradient-surface);
-    border: 1px solid hsl(var(--border));
+    @apply text-foreground;
+    background: var(--gradient-glass);
+    border-color: hsl(var(--border));
+    backdrop-filter: blur(20px);
   }
   
   .location-btn:hover {
-    background: var(--gradient-card-hover);
+    background: linear-gradient(135deg, rgba(255,255,255,0.4), rgba(255,255,255,0.2));
     box-shadow: var(--shadow-elegant);
+    border-color: hsl(var(--primary) / 0.3);
   }
   
-  /* Enhanced Product Category Cards */
+  /* Premium Product Cards */
   .product-card {
-    @apply rounded-2xl p-8 relative overflow-hidden;
+    @apply rounded-3xl p-8 relative overflow-hidden border-2;
     transition: var(--transition-elegant);
-    box-shadow: var(--shadow-card);
-    background: var(--gradient-surface);
-    border: 1px solid hsl(var(--border) / 0.5);
-    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-lg);
+    background: var(--gradient-glass);
+    border-color: hsl(var(--border));
+    backdrop-filter: blur(20px);
   }
   
   .product-card::before {
@@ -230,9 +230,9 @@
   }
   
   .product-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: var(--shadow-elegant);
-    border-color: hsl(var(--primary) / 0.3);
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: var(--shadow-2xl);
+    border-color: hsl(var(--primary));
   }
   
   .product-card > * {
@@ -240,12 +240,12 @@
     z-index: 1;
   }
   
-  /* Enhanced Section styling */
+  /* Premium Section styling */
   .section-container {
-    @apply py-20 px-4 md:py-32 relative;
+    @apply py-24 px-4 md:py-40 relative;
   }
   
-  /* Enhanced Hero gradient background */
+  /* Premium Hero background */
   .hero-bg {
     background: var(--gradient-hero);
     position: relative;
@@ -260,59 +260,56 @@
     right: 0;
     bottom: 0;
     background: var(--gradient-mesh);
-    opacity: 0.6;
-    animation: float 8s ease-in-out infinite;
+    opacity: 0.8;
+    animation: float 12s ease-in-out infinite;
   }
   
-  /* Animated elements */
+  /* Premium animations */
   .fade-in-up {
-    animation: slide-up 0.8s ease-out forwards;
+    animation: slide-up 1s ease-out forwards;
   }
   
   .fade-in {
-    animation: fade-in 0.6s ease-out forwards;
+    animation: fade-in 0.8s ease-out forwards;
   }
   
   .scale-in {
-    animation: scale-in 0.4s ease-out forwards;
+    animation: scale-in 0.6s ease-out forwards;
   }
   
   .float-animation {
-    animation: float 6s ease-in-out infinite;
+    animation: float 8s ease-in-out infinite;
   }
   
-  /* Enhanced typography */
+  /* Premium typography */
   .hero-title {
-    @apply text-5xl md:text-7xl lg:text-8xl font-bold;
-    background: linear-gradient(135deg, hsl(var(--foreground)), hsl(var(--primary)));
+    @apply text-6xl md:text-8xl lg:text-9xl font-black;
+    background: var(--gradient-premium);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: fade-in 1s ease-out;
+    animation: fade-in 1.2s ease-out;
+    text-shadow: 0 0 40px rgba(0,0,0,0.1);
   }
   
   .hero-subtitle {
-    @apply text-xl md:text-3xl text-muted-foreground;
-    animation: slide-up 0.8s ease-out 0.3s both;
+    @apply text-2xl md:text-4xl text-muted-foreground font-medium;
+    animation: slide-up 1s ease-out 0.3s both;
   }
   
   .feature-badge {
-    @apply inline-flex items-center space-x-2 px-6 py-3 rounded-full;
-    background: linear-gradient(135deg, hsl(var(--primary) / 0.1), hsl(var(--primary) / 0.2));
-    border: 1px solid hsl(var(--primary) / 0.3);
-    backdrop-filter: blur(10px);
-    animation: scale-in 0.6s ease-out 0.6s both;
+    @apply inline-flex items-center space-x-3 px-8 py-4 rounded-full border-2;
+    background: var(--gradient-glass);
+    border-color: hsl(var(--primary) / 0.3);
+    backdrop-filter: blur(20px);
+    animation: scale-in 0.8s ease-out 0.6s both;
+    box-shadow: var(--shadow-lg);
   }
   
-  /* Smooth scroll */
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Glassmorphism effects */
+  /* Premium glass effects */
   .glass-card {
-    @apply bg-card/80 backdrop-blur-md border border-border/50;
-    box-shadow: var(--shadow-card);
+    @apply bg-white/20 backdrop-blur-xl border-2 border-white/20;
+    box-shadow: var(--shadow-xl);
   }
   
   /* Mobile optimizations */
@@ -322,7 +319,7 @@
     }
     
     .section-container {
-      @apply py-16 px-4;
+      @apply py-20 px-4;
     }
     
     .product-card {
@@ -330,7 +327,7 @@
     }
     
     .hero-title {
-      @apply text-4xl md:text-6xl;
+      @apply text-5xl md:text-7xl;
     }
   }
   
