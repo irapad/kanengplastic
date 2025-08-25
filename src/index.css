@@ -284,13 +284,11 @@
   /* Premium typography */
   .hero-title {
     @apply text-6xl md:text-8xl lg:text-9xl font-black;
-    background: var(--gradient-premium);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: fade-in 1.2s ease-out;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.6);
-    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.9));
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.8), 
+                 6px 6px 0px rgba(0,0,0,0.6),
+                 0 0 30px rgba(0,0,0,0.9);
+    filter: drop-shadow(4px 4px 8px rgba(0,0,0,0.7));
   }
   
   .hero-subtitle {

@@ -13,10 +13,10 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto relative z-10">
           {/* Main Title */}
-          <h1 className="hero-title mb-4 text-shadow-lg">
-            <span className="text-primary drop-shadow-2xl">กันเองพลาสติก</span>
+          <h1 className="hero-title mb-4">
+            <span className="text-primary">กันเองพลาสติก</span>
             <br />
-            <span className="text-white drop-shadow-2xl">บางน้ำจืด</span>
+            <span className="text-secondary">บางน้ำจืด</span>
           </h1>
 
           {/* Subtitle */}
