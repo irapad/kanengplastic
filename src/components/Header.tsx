@@ -61,10 +61,10 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <a
               href="tel:0819222884"
-              className="phone-btn flex items-center space-x-2"
+              className="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-primary to-primary-glow rounded-full text-primary-foreground font-semibold text-sm hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:scale-105"
             >
-              <Phone size={16} />
-              <span>081-922-2884</span>
+              <Phone size={16} className="animate-pulse" />
+              <span className="tracking-wide">081-922-2884</span>
             </a>
           </div>
 
@@ -109,10 +109,10 @@ const Header = () => {
               </button>
               <a
                 href="tel:0819222884"
-                className="phone-btn flex items-center space-x-2 w-fit"
+                className="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-primary to-primary-glow rounded-full text-primary-foreground font-semibold text-sm hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:scale-105 w-fit"
               >
-                <Phone size={16} />
-                <span>081-922-2884</span>
+                <Phone size={16} className="animate-pulse" />
+                <span className="tracking-wide">081-922-2884</span>
               </a>
             </nav>
           </div>
