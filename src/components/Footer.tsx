@@ -44,9 +44,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-muted-foreground">
-              © 2024 กันเองพลาสติก บางน้ำจืด. สงวนลิขสิทธิ์.
-            </p>
+            <p className="text-sm text-muted-foreground">© 2025 กันเองพลาสติก บางน้ำจืด. สงวนลิขสิทธิ์.</p>
             
             <div className="flex items-center space-x-6">
               <span className="text-sm text-muted-foreground">
