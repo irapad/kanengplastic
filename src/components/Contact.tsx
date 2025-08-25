@@ -26,7 +26,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-card-foreground">ที่ตั้งร้าน</h4>
-                <p className="text-muted-foreground">บางน้ำจืด สมุทรปราการ</p>
+                <p className="text-muted-foreground">บางน้ำจืด สมุทรสาคร</p>
                 <a href="https://maps.app.goo.gl/NLloH1J74xEluGFPs" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 text-sm">
                   ดูแผนที่ →
                 </a>
@@ -88,7 +88,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-card-foreground text-sm">ที่ตั้งร้าน</h4>
-                      <p className="text-muted-foreground text-sm">บางน้ำจืด สมุทรปราการ</p>
+                      <p className="text-muted-foreground text-sm">บางน้ำจืด สมุทรสาคร</p>
                     </div>
                   </div>
                   <a 
