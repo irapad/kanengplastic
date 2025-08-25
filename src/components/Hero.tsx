@@ -1,5 +1,5 @@
 import { Phone, MessageCircle, MapPin, Star, Truck, Shield } from "lucide-react";
-import factoryBg from "../assets/factory-warehouse-bg.jpg";
+import factoryBg from "../assets/modern-factory-bg.jpg";
 
 const Hero = () => {
   return (
