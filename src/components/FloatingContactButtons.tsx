@@ -18,7 +18,7 @@ const FloatingContactButtons = () => {
         href="https://line.me/ti/p/~tee4828"
         target="_blank"
         rel="noopener noreferrer"
-        className="group w-16 h-16 bg-gradient-to-br from-green-500 via-green-600 to-green-700 rounded-full flex items-center justify-center shadow-2xl shadow-green-500/40 hover:shadow-3xl hover:shadow-green-400/60 transition-all duration-500 hover:scale-125 hover:rotate-12 animate-pulse border-2 border-green-400/30 hover:border-green-300/60"
+        className="group w-14 h-14 bg-gradient-to-br from-green-600 to-green-500 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
         title="แชท LINE: tee4828"
       >
         <i className="bi bi-line text-white text-2xl group-hover:animate-pulse"></i>
