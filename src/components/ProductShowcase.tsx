@@ -132,7 +132,7 @@ const ProductShowcase = () => {
       description: "สายรัด PP ใช้กับเครื่อง/รัดมือ",
       sizes: "กว้าง 9, 12, 15 มม. (หนา 0.6–1.0 มม.)",
       features: "เหนียว แข็งแรง สีมาตรฐาน เหมาะงานขนส่ง",
-      image: IMG.strap,
+      image: "/lovable-uploads/e03d83ef-459e-4b86-8711-2791360b3b1a.png",
     },
     {
       id: 10,
