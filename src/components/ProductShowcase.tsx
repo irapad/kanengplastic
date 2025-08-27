@@ -58,7 +58,7 @@ const ProductShowcase = () => {
       description: "Polypropylene (PP) ใส แข็งกรอบ ทนความร้อน",
       sizes: "4×6″, 5×8″, 6×9″, 7×11″, 8×12″",
       features: "ทนร้อน เหมาะใส่อาหารร้อน/น้ำซุป ใสคมชัด",
-      image: IMG.ppHot,
+      image: "/lovable-uploads/a990fcf3-f600-4918-a568-b7eda829b9bf.png",
       popular: true,
     },
     {
