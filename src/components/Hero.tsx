@@ -58,7 +58,7 @@ const Hero = () => {
             </a>
             
             <a
-              href="https://maps.app.goo.gl/NLloH1J74xEluGFPs"
+              href="https://share.google/AN5q4WMw6BTJ9aWdM"
               className="flex items-center gap-3 bg-gray-700 hover:bg-gray-600 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg w-full sm:w-auto justify-center"
               target="_blank"
               rel="noopener noreferrer"
