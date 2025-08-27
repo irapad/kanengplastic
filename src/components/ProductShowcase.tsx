@@ -101,33 +101,6 @@ const ProductShowcase = () => {
     },
     {
       id: 6,
-      category: "ม้วน/แผ่นพลาสติก",
-      name: "ม้วนพลาสติก LDPE (แผ่น/ม้วน)",
-      description: "LDPE สำหรับปูพื้น คลุมของ งานก่อสร้าง",
-      sizes: "หน้ากว้าง 1.2, 1.5, 2.0 ม. (ความหนา 30–200 ไมครอน)",
-      features: "สั่งตัดความกว้าง/ความหนาได้ตามต้องการ",
-      image: IMG.roll,
-    },
-    {
-      id: 7,
-      category: "อุปกรณ์แพ็คกิ้ง",
-      name: "เทป OPP ปิดกล่อง",
-      description: "เทปใส/น้ำตาล ความยาว 45/100 หลา",
-      sizes: "หน้ากว้าง 2″, 3″ (ความหนา 40–60 ไมครอน)",
-      features: "กาวแน่น ติดทน มีแบบ No-Noise/Hotmelt/Acrylic",
-      image: IMG.tape,
-    },
-    {
-      id: 8,
-      category: "อุปกรณ์แพ็คกิ้ง",
-      name: "ฟิล์มยืด (Stretch Film)",
-      description: "สำหรับพันพาเลท/ห่อรวมสินค้า",
-      sizes: "กว้าง 50 ซม., หนา 15/17/20 ไมครอน, 1–3 กก./ม้วน",
-      features: "ยืดสูง เกาะตัวดี มีแบบใส/ดำ แบบเครื่อง/แบบมือ",
-      image: IMG.stretch,
-    },
-    {
-      id: 9,
       category: "อุปกรณ์แพ็คกิ้ง",
       name: "สายรัดกล่อง (PP Band)",
       description: "สายรัด PP ใช้กับเครื่อง/รัดมือ",
@@ -136,7 +109,7 @@ const ProductShowcase = () => {
       image: "/lovable-uploads/e03d83ef-459e-4b86-8711-2791360b3b1a.png",
     },
     {
-      id: 10,
+      id: 7,
       category: "อุปกรณ์แพ็คกิ้ง",
       name: "ม้วนกันกระแทก (แอร์บับเบิ้ล/โฟม EPE)",
       description: "กันกระแทก ปกป้องสินค้า",
@@ -145,7 +118,7 @@ const ProductShowcase = () => {
       image: "/lovable-uploads/ac47e2c4-f4d4-4720-84ab-b7eeb0c90532.png",
     },
     {
-      id: 11,
+      id: 8,
       category: "เครื่องจักร",
       name: "เครื่องซีลปากถุง (Impulse Sealer)",
       description: "เครื่องซีลมือกด ใช้กับถุง PE/PP/OPP",
@@ -155,7 +128,7 @@ const ProductShowcase = () => {
       popular: true,
     },
     {
-      id: 12,
+      id: 9,
       category: "อุปกรณ์แพ็คกิ้ง",
       name: "เชือกฟาง PP หลากสี",
       description: "เชือกฟาง PP สำหรับมัดของ ห่อพัสดุ งานโลจิสติกส์",
@@ -164,7 +137,7 @@ const ProductShowcase = () => {
       image: "/lovable-uploads/72265905-916c-4ada-bb07-556d3827f82e.png",
     },
     {
-      id: 13,
+      id: 10,
       category: "ถุงพลาสติก",
       name: "ถุงขยะ/ถุงหูหิ้วสี",
       description: "ถุงขยะและถุงหูหิ้วหลากสี HDPE/LLDPE คุณภาพสูง",
@@ -173,7 +146,7 @@ const ProductShowcase = () => {
       image: "/lovable-uploads/d700b795-9155-4d5b-be9b-538a3178a098.png",
     },
     {
-      id: 14,
+      id: 11,
       category: "ถุงพลาสติก",
       name: "ซองไปรษณีย์พลาสติก",
       description: "ซองไปรษณีย์พลาสติก PE กันน้ำ แถบกาว ปิดปากแน่น",
@@ -183,7 +156,7 @@ const ProductShowcase = () => {
       popular: true,
     },
     {
-      id: 15,
+      id: 12,
       category: "ม้วน/แผ่นพลาสติก",
       name: "ม้วนพลาสติกหลายลาย",
       description: "ม้วนพลาสติก PE/PP หลากลาย ตัดได้ตามต้องการ",
@@ -192,7 +165,7 @@ const ProductShowcase = () => {
       image: "/lovable-uploads/e0c8695f-b18a-4c19-99ae-6529ff7b81fc.png",
     },
     {
-      id: 16,
+      id: 13,
       category: "อุปกรณ์แพ็คกิ้ง",
       name: "เทปขุน/ใส ฟิล์มยืด หนังยาง",
       description: "ชุดอุปกรณ์บรรจุภัณฑ์ครบครัน เทปหลากสี ฟิล์มยืด หนังยาง",
