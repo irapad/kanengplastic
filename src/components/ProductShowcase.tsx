@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Search, Package, Info } from "lucide-react";
+import { Search, Package, Info, X } from "lucide-react";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import plasticBagTurtle from "../assets/plastic-bag-turtle-brand.jpg";
 import llFoodGradeBags from "../assets/ll-food-grade-bags.jpg";
 import hdpeBagsPackage from "../assets/hdpe-bags-package.jpg";
@@ -251,15 +252,37 @@ const ProductShowcase = () => {
               )}
 
               {/* Image */}
-              <div className="relative mb-4 overflow-hidden rounded-xl">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  loading="lazy"
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <div className="relative mb-4 overflow-hidden rounded-xl cursor-pointer group/image">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      loading="lazy"
+                      className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 bg-black/20">
+                      <div className="bg-white/90 rounded-full p-2">
+                        <Search className="w-5 h-5 text-black" />
+                      </div>
+                    </div>
+                  </div>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl w-full p-0 bg-background border-0">
+                  <div className="relative">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full max-h-[80vh] object-contain rounded-lg"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
+                      <h3 className="text-xl font-bold mb-2">{product.name}</h3>
+                      <p className="text-sm opacity-90">{product.description}</p>
+                    </div>
+                  </div>
+                </DialogContent>
+              </Dialog>
 
               {/* Content */}
               <div className="space-y-3">
