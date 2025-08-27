@@ -16,6 +16,15 @@ const FloatingContactButtons = () => {
       {/* Line Button */}
       <a
         href="https://line.me/ti/p/~tee4828"
+        onClick={(e) => {
+          e.preventDefault();
+          // Try to open LINE app first
+          window.location.href = "line://ti/p/~tee4828";
+          // Fallback to web after short delay
+          setTimeout(() => {
+            window.open("https://line.me/ti/p/~tee4828", "_blank", "noopener,noreferrer");
+          }, 300);
+        }}
         target="_blank"
         rel="noopener noreferrer"
         className="group w-14 h-14 bg-gradient-to-br from-primary to-primary-glow rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"

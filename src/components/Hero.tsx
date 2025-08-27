@@ -49,6 +49,13 @@ const Hero = () => {
             
             <a
               href="https://line.me/ti/p/~tee4828"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "line://ti/p/~tee4828";
+                setTimeout(() => {
+                  window.open("https://line.me/ti/p/~tee4828", "_blank", "noopener,noreferrer");
+                }, 300);
+              }}
               className="flex items-center gap-3 bg-[#00B900] hover:bg-[#00B900]/90 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg w-full sm:w-auto justify-center"
               target="_blank"
               rel="noopener noreferrer"
