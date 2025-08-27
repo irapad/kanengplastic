@@ -47,7 +47,7 @@ const ProductShowcase = () => {
       description: "ถุงพลาสติกพิมพ์ลาย โลโก้ ตามสั่ง คุณภาพสูง",
       sizes: "ทุกขนาดตามสั่ง, MOQ ตั้งแต่ 1,000 ใบ",
       features: "พิมพ์ได้ 1-8 สี, ผลิตตามแบบ, มีบริการออกแบบ",
-      image: IMG.ppHot, // ใช้รูปตัวอย่างชั่วคราว
+      image: "/lovable-uploads/3669a873-e153-4b3c-9a3b-ed8959fbb700.png", // ใช้รูปถุงพิมพ์ลายที่ผู้ใช้อัปโหลดมา
       popular: true,
       isCustom: true,
     },
