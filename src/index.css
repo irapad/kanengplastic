@@ -19,11 +19,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
 
-    /* Premium Green Primary */
-    --primary: 142 76% 36%;
+    /* Premium Jade Green Primary (เขียวหยกเหมือนโลโก้เต่า) */
+    --primary: 122 53% 23%;
     --primary-foreground: 355.7 100% 97.3%;
-    --primary-glow: 142 76% 46%;
-    --primary-dark: 142 86% 26%;
+    --primary-glow: 122 53% 33%;
+    --primary-dark: 122 53% 18%;
 
     /* Premium Orange Secondary */
     --secondary: 24 95% 53%;
@@ -43,22 +43,22 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
     
-    --success: 142 76% 36%;
+    --success: 122 53% 23%;
     --success-foreground: 210 40% 98%;
 
     /* Border and input */
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 142 76% 36%;
+    --ring: 122 53% 23%;
 
     /* Design tokens */
     --radius: 1rem;
     
     /* Premium gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
+    --gradient-primary: linear-gradient(135deg, hsl(122 53% 23%), hsl(122 53% 33%));
     --gradient-secondary: linear-gradient(135deg, hsl(24 95% 53%), hsl(24 95% 63%));
-    --gradient-hero: linear-gradient(135deg, hsl(142 76% 36% / 0.03), hsl(24 95% 53% / 0.03));
-    --gradient-premium: linear-gradient(135deg, hsl(142 76% 36%), hsl(24 95% 53%));
+    --gradient-hero: linear-gradient(135deg, hsl(122 53% 23% / 0.03), hsl(24 95% 53% / 0.03));
+    --gradient-premium: linear-gradient(135deg, hsl(122 53% 23%), hsl(24 95% 53%));
     --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
     
     /* Premium shadows */
@@ -68,7 +68,7 @@
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     --shadow-elegant: 0 20px 40px -12px rgb(0 0 0 / 0.15);
-    --shadow-glow-green: 0 0 40px hsl(142 76% 36% / 0.3);
+    --shadow-glow-green: 0 0 40px hsl(122 53% 23% / 0.3);
     --shadow-glow-orange: 0 0 40px hsl(24 95% 53% / 0.3);
     
     /* Premium transitions */
@@ -78,9 +78,9 @@
 
     /* Premium mesh gradients */
     --gradient-mesh: 
-      radial-gradient(circle at 20% 50%, hsl(142 76% 36% / 0.15) 0%, transparent 50%), 
+      radial-gradient(circle at 20% 50%, hsl(122 53% 23% / 0.15) 0%, transparent 50%), 
       radial-gradient(circle at 80% 20%, hsl(24 95% 53% / 0.15) 0%, transparent 50%), 
-      radial-gradient(circle at 40% 80%, hsl(142 76% 46% / 0.1) 0%, transparent 50%);
+      radial-gradient(circle at 40% 80%, hsl(122 53% 33% / 0.1) 0%, transparent 50%);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -99,7 +99,7 @@
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 142 76% 46%;
+    --primary: 122 53% 33%;
     --primary-foreground: 222.2 47.4% 11.2%;
     --secondary: 24 95% 63%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -179,14 +179,14 @@
   
   .line-btn {
     @apply text-white;
-    background: linear-gradient(135deg, #00C851, #28a745);
-    border-color: #00C851;
+    background: linear-gradient(135deg, hsl(122 53% 23%), hsl(122 53% 33%));
+    border-color: hsl(122 53% 23%);
   }
   
   .line-btn:hover {
-    background: linear-gradient(135deg, #28a745, #00C851);
-    box-shadow: 0 0 50px rgba(0, 200, 81, 0.5);
-    border-color: #28a745;
+    background: linear-gradient(135deg, hsl(122 53% 33%), hsl(122 53% 23%));
+    box-shadow: 0 0 50px hsl(122 53% 23% / 0.5);
+    border-color: hsl(122 53% 33%);
   }
   
   .location-btn {

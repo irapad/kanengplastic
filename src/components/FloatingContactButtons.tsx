@@ -18,7 +18,7 @@ const FloatingContactButtons = () => {
         href="https://line.me/R/ti/p/0819222884"
         target="_blank"
         rel="noopener noreferrer"
-        className="group w-14 h-14 bg-gradient-to-br from-green-600 to-green-500 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+        className="group w-14 h-14 bg-gradient-to-br from-primary to-primary-glow rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
         title="แชท LINE: 081-922-2884"
       >
         <i className="bi bi-line text-white text-2xl group-hover:animate-pulse"></i>

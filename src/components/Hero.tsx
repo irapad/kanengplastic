@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center relative bg-gradient-to-br from-orange-50 via-green-50 to-orange-100"
+      className="min-h-screen flex items-center relative bg-gradient-to-br from-orange-50 via-primary/5 to-orange-100"
     >
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto space-y-8">
@@ -14,7 +14,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
               <span className="text-orange-600">กันเองพลาสติก</span>
               <br />
-              <span className="text-green-700">บางน้ำจืด</span>
+              <span className="text-primary">บางน้ำจืด</span>
             </h1>
             
             <p className="text-lg md:text-xl text-gray-700 font-medium max-w-2xl mx-auto">
@@ -30,7 +30,7 @@ const Hero = () => {
 
           {/* Key Features */}
           <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl p-6 max-w-2xl mx-auto shadow-lg">
-            <div className="text-green-700 font-semibold text-lg mb-3">บริการจัดส่งด่วนพิเศษ</div>
+            <div className="text-primary font-semibold text-lg mb-3">บริการจัดส่งด่วนพิเศษ</div>
             <p className="text-gray-700 text-sm md:text-base leading-relaxed">
               จัดส่งภายในวันเดียวสำหรับลูกค้าในจังหวัดสมุทรสาคร<br />
               สั่งเช้า รับเย็น พร้อมบริการจัดส่งถึงหน้าบ้าน
