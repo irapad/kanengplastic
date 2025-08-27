@@ -68,7 +68,7 @@ const ProductShowcase = () => {
       description: "LLDPE เนื้อเหนียวยืดหยุ่น ทนเย็น",
       sizes: "5×8″, 6×9″, 8×12″, 9×14″, 12×18″",
       features: "Food Grade, เหมาะแช่แข็ง/ใส่อาหารทั่วไป ไม่กรอบแตก",
-      image: IMG.llFood,
+      image: "/lovable-uploads/11fd655f-cc96-4f96-aa4e-1dbf4878ac75.png",
     },
     {
       id: 3,
