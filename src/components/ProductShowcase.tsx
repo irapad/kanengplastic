@@ -182,6 +182,15 @@ const ProductShowcase = () => {
       image: "/lovable-uploads/461b0186-b282-43d0-8f7b-26fd35b739b4.png",
       popular: true,
     },
+    {
+      id: 15,
+      category: "ม้วน/แผ่นพลาสติก",
+      name: "ม้วนพลาสติกหลายลาย",
+      description: "ม้วนพลาสติก PE/PP หลากลาย ตัดได้ตามต้องการ",
+      sizes: "กว้าง 50-200 ซม., หนา 20-100 ไมครอน, ความยาวตามสั่ง",
+      features: "หลายลาย หลายสี ตัดขนาดได้ตามต้องการ เหมาะงานอุตสาหกรรม",
+      image: "/lovable-uploads/e0c8695f-b18a-4c19-99ae-6529ff7b81fc.png",
+    },
   ];
 
   const categories = ["ทั้งหมด", "ถุงพลาสติก", "ม้วน/แผ่นพลาสติก", "อุปกรณ์แพ็คกิ้ง", "เครื่องจักร"] as const;
