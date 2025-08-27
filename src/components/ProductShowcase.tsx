@@ -142,7 +142,7 @@ const ProductShowcase = () => {
       description: "กันกระแทก ปกป้องสินค้า",
       sizes: "กว้าง 0.65/1.30 ม. (เลือกเส้นผ่านฟอง 10–28 มม.)",
       features: "เลือก 1 ชั้น/2 ชั้น ตัดตามสั่งได้",
-      image: IMG.bubble,
+      image: "/lovable-uploads/ac47e2c4-f4d4-4720-84ab-b7eeb0c90532.png",
     },
     {
       id: 11,
