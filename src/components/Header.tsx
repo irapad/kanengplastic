@@ -21,7 +21,7 @@ const Header = () => {
           <div className="flex items-center space-x-4 group cursor-pointer transition-all duration-300 hover:scale-105">
             <div className="relative">
               <img 
-                src="/lovable-uploads/a97b4dce-8c29-4c3c-b382-5e355bd8b02f.png" 
+                src="/lovable-uploads/03e1a083-78e2-4342-b5fa-64144033c924.png" 
                 alt="กันเองพลาสติก บางน้ำจืด Logo" 
                 className="h-10 md:h-12 w-auto filter drop-shadow-lg transition-all duration-300 group-hover:drop-shadow-2xl"
               />
