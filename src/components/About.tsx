@@ -1,64 +1,57 @@
 import { Users, Award, Truck, Shield, Clock, ThumbsUp } from "lucide-react";
-
 const About = () => {
-  const features = [
-    {
-      icon: Award,
-      title: "มากกว่า 40 ปี",
-      description: "ของประสบการณ์ในธุรกิจ"
-    },
-    {
-      icon: Users,
-      title: "ลูกค้าไว้วางใจ",
-      description: "มากกว่า 1,000+ สมุทรสาครเเละทั่วประเทศ"
-    },
-    {
-      icon: Shield,
-      title: "คุณภาพมาตรฐาน",
-      description: "สินค้าผ่านการคัดสรรอย่างดี"
-    },
-    {
-      icon: Truck,
-      title: "บริการส่งด่วน",
-      description: "บริการส่งด่วนในจังหวัดสมุทรสาคร"
-    },
-    {
-      icon: Clock,
-      title: "บริการรวดเร็ว",
-      description: "ตอบสนองความต้องการได้ทันที"
-    },
-    {
-      icon: ThumbsUp,
-      title: "ราคายุติธรรม",
-      description: "ราคาขายส่งที่เป็นธรรม"
-    }
-  ];
-
-  const stats = [
-    { number: "40+", label: "ปีของประสบการณ์" },
-    { number: "1000+", label: "ลูกค้าที่ไว้วางใจ" },
-    { number: "50+", label: "ประเภทสินค้า" },
-    { number: "24/7", label: "พร้อมให้บริการ" }
-  ];
-
-  return (
-    <section id="about" className="section-container bg-muted/30">
+  const features = [{
+    icon: Award,
+    title: "มากกว่า 40 ปี",
+    description: "ของประสบการณ์ในธุรกิจ"
+  }, {
+    icon: Users,
+    title: "ลูกค้าไว้วางใจ",
+    description: "มากกว่า 1,000+ สมุทรสาครเเละทั่วประเทศ"
+  }, {
+    icon: Shield,
+    title: "คุณภาพมาตรฐาน",
+    description: "สินค้าผ่านการคัดสรรอย่างดี"
+  }, {
+    icon: Truck,
+    title: "บริการส่งด่วน",
+    description: "บริการส่งด่วนในจังหวัดสมุทรสาคร"
+  }, {
+    icon: Clock,
+    title: "บริการรวดเร็ว",
+    description: "ตอบสนองความต้องการได้ทันที"
+  }, {
+    icon: ThumbsUp,
+    title: "ราคายุติธรรม",
+    description: "ราคาขายส่งที่เป็นธรรม"
+  }];
+  const stats = [{
+    number: "40+",
+    label: "ปีของประสบการณ์"
+  }, {
+    number: "1000+",
+    label: "ลูกค้าที่ไว้วางใจ"
+  }, {
+    number: "50+",
+    label: "ประเภทสินค้า"
+  }, {
+    number: "24/7",
+    label: "พร้อมให้บริการ"
+  }];
+  return <section id="about" className="section-container bg-muted/30">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             เกี่ยวกับ<span className="text-primary">เรา</span>
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            กันเองพลาสติก บางน้ำจืด เป็นผู้เชี่ยวชาญด้านถุงพลาสติกและบรรจุภัณฑ์ 
-            ที่มีประสบการณ์มากกว่า 40 ปี พร้อมให้บริการลูกค้าทั่วประเทศด้วยความเป็นมืออาชีพ
-          </p>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">"กันเองพลาสติก บางน้ำจืด ผู้เชี่ยวชาญด้านถุงพลาสติกและบรรจุภัณฑ์มากกว่า 40 ปี มีหน้าร้านและโรงงานจริง พร้อมให้บริการลูกค้าทั่วประเทศอย่างมืออาชีพ"
+        </p>
         </div>
 
         {/* Stats Section */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center">
+          {stats.map((stat, index) => <div key={index} className="text-center">
               <div className="bg-card rounded-xl p-6 product-card">
                 <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                   {stat.number}
@@ -67,16 +60,14 @@ const About = () => {
                   {stat.label}
                 </div>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {features.map((feature, index) => {
-            const IconComponent = feature.icon;
-            return (
-              <div key={index} className="product-card text-center">
+          const IconComponent = feature.icon;
+          return <div key={index} className="product-card text-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <IconComponent className="w-8 h-8 text-primary" />
                 </div>
@@ -86,9 +77,8 @@ const About = () => {
                 <p className="text-muted-foreground">
                   {feature.description}
                 </p>
-              </div>
-            );
-          })}
+              </div>;
+        })}
         </div>
 
         {/* Company Story */}
@@ -120,8 +110,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
