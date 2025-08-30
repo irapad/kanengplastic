@@ -273,7 +273,8 @@ const ProductShowcase = () => {
         <div className="text-center mt-16 fade-in">
           <div className="glass-card rounded-2xl p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-foreground mb-4">ต้องการสินค้าเฉพาะ หรือสั่งในจำนวนมาก?</h3>
-            <p className="text-muted-foreground mb-6">เรามีสินค้าหลากหลายมากกว่าที่แสดง และรับผลิตตามออเดอร์พิเศษ</p>
+            <p className="text-muted-foreground mb-6">"เรามีสินค้าหลากหลายขนาดและไซส์ มากกว่าที่แสดงในหน้านี้ พร้อมทั้งรับผลิตถุงพิมพ์และออกแบบตามความต้องการของลูกค้า"
+          </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:0819222884" className="contact-btn phone-btn">โทรสอบถาม 081-922-2884</a>
               <a href="https://line.me/R/ti/p/0819222884" target="_blank" rel="noopener noreferrer" className="contact-btn line-btn">Line สอบถาม</a>
