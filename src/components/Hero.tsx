@@ -43,7 +43,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="tel:0819222884"
-                className="flex items-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-110 hover:shadow-xl active:scale-95 w-full sm:w-auto justify-center animate-pulse hover:animate-none"
+                className="flex items-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-110 hover:shadow-xl active:scale-95 w-full sm:w-auto justify-center"
               >
                 <Phone className="w-5 h-5" />
                 <span>โทร 081-922-2884</span>
