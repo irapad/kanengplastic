@@ -205,9 +205,7 @@ const PrintCatalog = () => {
           <h2 className="text-4xl font-bold text-foreground mb-4">
             ตัวอย่างงานพิมพ์คุณภาพสูง
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            แกลเลอรี่ผลงานพิมพ์ถุงพลาสติก 1-8 สี คุณภาพระดับโลก
-          </p>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">ผลงานพิมพ์/ออกแบบถุงพลาสติก 1-8 สี คุณภาพจากกันเองพลาสติก(บางน้ำจืด)</p>
         </div>
 
         {/* Category Filter */}
