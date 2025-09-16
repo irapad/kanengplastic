@@ -26,7 +26,7 @@ const Hero = () => {
           {/* Experience Badge */}
           <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-6 py-3 shadow-lg">
             <Star className="w-5 h-5 text-orange-500" />
-            <span className="text-gray-800 font-semibold">ประสบการณ์ 40+ ปี</span>
+            <span className="text-gray-800 font-semibold">ประสบการณ์ 15+ ปี</span>
           </div>
 
           {/* Key Features */}

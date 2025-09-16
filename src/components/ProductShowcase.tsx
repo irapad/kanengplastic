@@ -204,7 +204,7 @@ const ProductShowcase = () => {
             <span className="text-foreground">ของเรา</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            ถุงพลาสติกและอุปกรณ์บรรจุภัณฑ์คุณภาพสูง ประสบการณ์ 40+ ปี
+            ถุงพลาสติกและอุปกรณ์บรรจุภัณฑ์คุณภาพสูง ประสบการณ์ 15+ ปี
           </p>
           
           {/* Print Catalog Button */}
