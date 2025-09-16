@@ -9,6 +9,10 @@ import catalogIntexPillow from "../assets/catalog-intex-pillow.jpg";
 import catalogElephantSeaweed from "../assets/catalog-elephant-seaweed.jpg";
 import catalogEagleMop from "../assets/catalog-eagle-mop.jpg";
 import catalogBigboomSeaweed from "../assets/catalog-bigboom-seaweed.jpg";
+import catalogClothHanger156 from "../assets/catalog-cloth-hanger-156.jpg";
+import catalogClothHanger357 from "../assets/catalog-cloth-hanger-357.jpg";
+import catalogCoconutJuice from "../assets/catalog-coconut-juice.jpg";
+import catalogChaithatSeafood from "../assets/catalog-chaithat-seafood.jpg";
 
 const PrintCatalog = () => {
   const [selectedCategory, setSelectedCategory] = useState("ทั้งหมด");
@@ -146,6 +150,82 @@ const PrintCatalog = () => {
         "เหมาะสำหรับอุปกรณ์ทำความสะอาด"
       ],
       category: "2 สี"
+    },
+    {
+      id: 8,
+      title: "Double Geese NO.156 - ไม้แขวน",
+      colors: 3,
+      description: "ถุงไม้แขวนเสื้อผ้าพิมพ์ 3 สี (เขียว + ชมพู + ขาว)",
+      image: catalogClothHanger156,
+      specifications: [
+        "ขนาด: 19×9.74 นิ้ว",
+        "พิมพ์ 3 สี (เขียว + ชมพู + ขาว)",
+        "วัสดุ: LDPE หรือ PP ใส",
+        "สินค้า: ไม้แขวนเสื้อผ้า 12 ชิ้น"
+      ],
+      features: [
+        "พิมพ์ลายหงส์คู่สวยงาม",
+        "สีเขียวชมพูโดดเด่นบนพื้นขาว",
+        "เหมาะสำหรับสินค้าในครัวเรือน"
+      ],
+      category: "3 สี"
+    },
+    {
+      id: 9,
+      title: "Double Geese NO.357 - ไม้แขวน",
+      colors: 3,
+      description: "ถุงไม้แขวนเสื้อผ้าพิมพ์ 3 สี (เขียว + ชมพู + ขาว) รุ่น 357",
+      image: catalogClothHanger357,
+      specifications: [
+        "ขนาด: 19×9.74 นิ้ว",
+        "พิมพ์ 3 สี (เขียว + ชมพู + ขาว)",
+        "วัสดุ: LDPE หรือ PP ใส",
+        "สินค้า: ไม้แขวนเสื้อผ้า 12 ชิ้น"
+      ],
+      features: [
+        "ดีไซน์ลายไทยประยุกต์สมัยใหม่",
+        "การไล่สีชมพูเป็นไฮไลท์",
+        "งานพิมพ์คุณภาพสูงคมชัด"
+      ],
+      category: "3 สี"
+    },
+    {
+      id: 10,
+      title: "Phoenix Coconut Juice - น้ำมะพร้าว",
+      colors: 3,
+      description: "ถุงน้ำมะพร้าวแช่แข็งพิมพ์ 3 สี (แดง + เขียว + ขาว)",
+      image: catalogCoconutJuice,
+      specifications: [
+        "ขนาด: 12.5×19 ซม.",
+        "พิมพ์ 3 สี (แดง + เขียว + ขาว)",
+        "วัสดุ: PE หรือ PP ใส",
+        "ปริมาณ: 280 มล."
+      ],
+      features: [
+        "พิมพ์โลโก้เรือมังกรสีแดงโดดเด่น",
+        "ข้อความ 2 ภาษา (ไทย-อังกฤษ)",
+        "เหมาะสำหรับเครื่องดื่มแช่แข็ง"
+      ],
+      category: "3 สี"
+    },
+    {
+      id: 11,
+      title: "ชัยทัศซีฟู๊ด - เครื่องปรุงรส",
+      colors: 3,
+      description: "ถุงเครื่องปรุงรสซีฟู๊ดพิมพ์ 3 สี (เหลือง + แดง + ขาว)",
+      image: catalogChaithatSeafood,
+      specifications: [
+        "ขนาด: 12×19 นิ้ว",
+        "พิมพ์ 3 สี (เหลือง + แดง + ขาว)",
+        "วัสดุ: BOPP หรือ PP laminated",
+        "สินค้า: เครื่องปรุงรสซีฟู๊ด"
+      ],
+      features: [
+        "พิมพ์ลายกบเหลืองโดดเด่น",
+        "ตารางสีหลายรายการอาหาร",
+        "เหมาะสำหรับสินค้าอาหารแห้ง"
+      ],
+      category: "3 สี"
     }
   ];
 
