@@ -1,4 +1,4 @@
-import { ArrowLeft, X } from "lucide-react";
+import { ArrowLeft, X, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import catalogKonomiGreen from "../assets/catalog-konomi-classic-green.jpg";
@@ -238,11 +238,17 @@ const PrintCatalog = () => {
         {/* Contact CTA */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
-            <div className="space-y-3 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-              <a href="tel:081-922-2884" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-8 py-3 transition-colors inline-block">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+              <a href="tel:081-922-2884" className="flex-1 bg-gradient-to-r from-green-600 to-green-700 text-white font-medium rounded-full px-6 py-4 transition-all duration-300 hover:from-green-700 hover:to-green-800 hover:shadow-lg hover:scale-105 inline-flex items-center justify-center gap-3">
+                <Phone className="w-5 h-5" />
                 โทรสอบถาม 081-922-2884
               </a>
-              <a href="https://line.me/ti/p/~tee4828" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-green-500 text-white hover:bg-green-600 rounded-lg px-8 py-3 transition-colors inline-flex items-center justify-center gap-2">
+              <a 
+                href="https://line.me/ti/p/~tee4828" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex-1 bg-gradient-to-r from-green-500 to-green-600 text-white font-medium rounded-full px-6 py-4 transition-all duration-300 hover:from-green-600 hover:to-green-700 hover:shadow-lg hover:scale-105 inline-flex items-center justify-center gap-3"
+              >
                 <i className="bi bi-line text-xl"></i>
                 LINE: tee4828
               </a>
