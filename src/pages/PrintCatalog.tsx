@@ -183,107 +183,72 @@ const PrintCatalog = () => {
   const categories = ["ทั้งหมด", "1 สี", "2 สี", "3 สี", "4 สี", "5 สี", "6 สี", "8 สี"];
   const filteredItems = selectedCategory === "ทั้งหมด" ? catalogItems : catalogItems.filter(item => item.category === selectedCategory);
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-muted/10 to-background relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]"></div>
-      
+    <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-background">
       {/* Header */}
-      <div className="sticky top-0 z-40 bg-background/95 backdrop-blur-lg border-b border-border/30 shadow-sm">
-        <div className="container mx-auto px-4 py-6">
+      <div className="sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-border/50">
+        <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <Link to="/" className="group flex items-center gap-3 text-muted-foreground hover:text-primary transition-all duration-300">
-                <div className="p-2 rounded-full bg-muted/50 group-hover:bg-primary/10 transition-colors">
-                  <ArrowLeft className="w-4 h-4 group-hover:translate-x-[-2px] transition-transform" />
-                </div>
+              <Link to="/" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+                <ArrowLeft className="w-5 h-5" />
                 <span className="font-medium">กลับหน้าหลัก</span>
               </Link>
             </div>
-            <div className="text-center">
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                แคตตาล็อกงานพิมพ์
-              </h1>
-            </div>
-            <div className="w-[140px]"></div>
+            <h1 className="text-2xl font-bold text-foreground">แคตตาล็อกงานพิมพ์</h1>
+            <div className="w-[120px]"></div>
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12 relative">
-        {/* Hero Title Section */}
-        <div className="text-center mb-16 relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 blur-3xl"></div>
-          <div className="relative">
-            <div className="inline-block mb-6">
-              <div className="px-6 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20">
-                ✨ ความเชี่ยวชาญมากกว่า 20 ปี
-              </div>
-            </div>
-            <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-              ตัวอย่างงาน<span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">พิมพ์</span>คุณภาพสูง
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary/50 mx-auto mb-6 rounded-full"></div>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              ผลงานพิมพ์/ออกแบบถุงพลาสติก <span className="font-semibold text-primary">1-8 สี</span> คุณภาพจากกันเองพลาสติก(บางน้ำจืด)
-            </p>
-          </div>
+      <div className="container mx-auto px-4 py-8">
+        {/* Title Section */}
+        <div className="text-center mb-8">
+          <h2 className="text-4xl font-bold text-foreground mb-4">
+            ตัวอย่างงานพิมพ์คุณภาพสูง
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">ผลงานพิมพ์/ออกแบบถุงพลาสติก 1-8 สี คุณภาพจากกันเองพลาสติก(บางน้ำจืด)</p>
         </div>
 
         {/* Category Filter */}
-        <div className="mb-12">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-semibold text-foreground mb-3">เลือกตามจำนวนสี</h3>
-            <p className="text-muted-foreground">คลิกเพื่อกรองตามจำนวนสีที่ต้องการ</p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-4">
-            {categories.map(category => 
-              <button 
-                key={category} 
-                onClick={() => setSelectedCategory(category)} 
-                className={`group relative px-8 py-3 rounded-2xl font-semibold transition-all duration-300 overflow-hidden ${
-                  selectedCategory === category 
-                    ? "bg-gradient-to-r from-primary to-primary/80 text-primary-foreground shadow-lg shadow-primary/25 scale-105" 
-                    : "bg-card hover:bg-card/80 text-muted-foreground hover:text-foreground border border-border/30 hover:border-primary/30 hover:shadow-md"
-                }`}
-              >
-                {selectedCategory === category && (
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent animate-pulse"></div>
-                )}
-                <span className="relative z-10">{category}</span>
-              </button>
-            )}
-          </div>
+        <div className="flex flex-wrap justify-center gap-3 mb-8">
+          {categories.map(category => 
+            <button 
+              key={category} 
+              onClick={() => setSelectedCategory(category)} 
+              className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
+                selectedCategory === category 
+                  ? "bg-primary text-primary-foreground shadow-lg scale-105" 
+                  : "bg-card hover:bg-card/80 text-muted-foreground hover:text-foreground border border-border/50"
+              }`}
+            >
+              {category}
+            </button>
+          )}
         </div>
 
 
         {/* Image Gallery */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
           {filteredItems.map(item => 
             <div 
               key={item.id} 
-              className="group bg-card/60 backdrop-blur-sm rounded-2xl overflow-hidden border border-border/30 shadow-lg hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-primary/30" 
+              className="bg-card/50 backdrop-blur-sm rounded-xl overflow-hidden border border-border/50 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group" 
               onClick={() => setSelectedImage(item.image)}
             >
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={item.image} 
                   alt={item.title} 
-                  className="w-full h-full object-contain bg-white group-hover:scale-110 transition-transform duration-500" 
+                  className="w-full h-full object-contain bg-white group-hover:scale-105 transition-transform duration-300" 
                 />
-                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
-                  <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                </div>
               </div>
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs px-3 py-1.5 bg-gradient-to-r from-primary/20 to-primary/10 text-primary rounded-full font-semibold border border-primary/20">
+              <div className="p-4">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs px-2 py-1 bg-primary/20 text-primary rounded-full font-medium">
                     {item.category}
                   </span>
                 </div>
-                <h3 className="font-semibold text-foreground text-sm leading-relaxed group-hover:text-primary transition-colors duration-300">
+                <h3 className="font-semibold text-foreground text-sm leading-tight">
                   {item.title}
                 </h3>
               </div>
