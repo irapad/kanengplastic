@@ -242,7 +242,8 @@ const PrintCatalog = () => {
               <a href="tel:081-922-2884" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-8 py-3 transition-colors inline-block">
                 โทรสอบถาม 081-922-2884
               </a>
-              <a href="https://line.me/ti/p/~tee4828" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-lg px-8 py-3 transition-colors inline-block">
+              <a href="https://line.me/ti/p/~tee4828" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-green-500 text-white hover:bg-green-600 rounded-lg px-8 py-3 transition-colors inline-flex items-center justify-center gap-2">
+                <i className="bi bi-line text-xl"></i>
                 LINE: tee4828
               </a>
             </div>
