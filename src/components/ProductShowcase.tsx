@@ -183,6 +183,17 @@ const ProductShowcase = () => {
           <p className="text-lg text-muted-foreground mb-8">
             ถุงพลาสติกและอุปกรณ์บรรจุภัณฑ์คุณภาพสูง ประสบการณ์ 40+ ปี
           </p>
+          
+          {/* Print Catalog Button */}
+          <div className="mb-8">
+            <Link 
+              to="/print-catalog" 
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-6 py-3 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium"
+            >
+              <Package className="w-5 h-5" />
+              <span>ดูแคตตาล็อกถุงพิมพ์ลาย</span>
+            </Link>
+          </div>
         </div>
 
         {/* Search & Filter */}
