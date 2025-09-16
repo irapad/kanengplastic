@@ -239,8 +239,8 @@ const PrintCatalog = () => {
         <div className="text-center">
           <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
             <div className="space-y-3 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-              <a href="tel:096-636-5000" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-8 py-3 transition-colors inline-block">
-                โทรสอบถาม 096-636-5000
+              <a href="tel:081-922-2884" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-8 py-3 transition-colors inline-block">
+                โทรสอบถาม 081-922-2884
               </a>
               <a href="https://line.me/ti/p/~tee4828" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-lg px-8 py-3 transition-colors inline-block">
                 LINE: tee4828
