@@ -165,7 +165,7 @@ const PrintCatalog = () => {
     category: "6 สี"
   }, {
     id: 27,
-    title: "Chaba Shampoo - แชมพูชบา",
+    title: "chaba - น้ำตาลมะพร้าวอย่างดี",
     image: catalogChabaShampoo,
     category: "6 สี"
   }, {
