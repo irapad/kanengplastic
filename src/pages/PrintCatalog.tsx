@@ -1,6 +1,7 @@
 import { ArrowLeft, X, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import FloatingContactButtons from "../components/FloatingContactButtons";
 import catalogKonomiGreen from "../assets/catalog-konomi-classic-green.jpg";
 import catalogKonomiRed from "../assets/catalog-konomi-spicy-red.jpg";
 import catalogTaokaenoi from "../assets/catalog-taokaenoi-clear.jpg";
@@ -181,7 +182,8 @@ const PrintCatalog = () => {
   }];
   const categories = ["ทั้งหมด", "1 สี", "2 สี", "3 สี", "4 สี", "5 สี", "6 สี", "8 สี"];
   const filteredItems = selectedCategory === "ทั้งหมด" ? catalogItems : catalogItems.filter(item => item.category === selectedCategory);
-  return <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-background">
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-background">
       {/* Header */}
       <div className="sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-border/50">
         <div className="container mx-auto px-4 py-4">
@@ -235,29 +237,6 @@ const PrintCatalog = () => {
             </div>)}
         </div>
 
-        {/* Contact CTA */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
-            <div className="flex gap-6 justify-center">
-              <a 
-                href="tel:081-922-2884" 
-                className="w-16 h-16 bg-green-600 hover:bg-green-700 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
-                title="โทรสอบถาม: 081-922-2884"
-              >
-                <Phone className="w-7 h-7 text-white" />
-              </a>
-              <a 
-                href="https://line.me/ti/p/~tee4828" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-16 h-16 bg-green-600 hover:bg-green-700 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
-                title="เพิ่มเพื่อน LINE: tee4828"
-              >
-                <i className="bi bi-line text-white text-2xl"></i>
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Image Modal */}
@@ -269,6 +248,9 @@ const PrintCatalog = () => {
             <img src={selectedImage} alt="Catalog preview" className="w-full h-full object-contain rounded-lg bg-white" />
           </div>
         </div>}
-    </div>;
+
+      <FloatingContactButtons />
+    </div>
+  );
 };
 export default PrintCatalog;
