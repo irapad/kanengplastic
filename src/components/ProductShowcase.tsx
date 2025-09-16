@@ -56,7 +56,9 @@ const ProductShowcase = () => {
       sizes: "ทุกขนาดตามสั่ง",
       features: "พิมพ์ได้ 1-8 สี, ผลิตตามแบบ, มีบริการออกแบบ",
       image: "/lovable-uploads/3669a873-e153-4b3c-9a3b-ed8959fbb700.png",
-      // ใช้รูปถุงพิมพ์ลายที่ผู้ใช้อัปโหลดมา
+      material: "PE/PP",
+      thickness: "ตามสั่ง",
+      usage: "บรรจุภัณฑ์พิเศษ",
       popular: true,
       isCustom: true
     },
@@ -68,6 +70,9 @@ const ProductShowcase = () => {
       sizes: "4×6″, 5×8″, 6×9″, 7×11″, 8×12″",
       features: "ทนร้อน เหมาะใส่อาหารร้อน/น้ำซุป ใสคมชัด",
       image: "/lovable-uploads/a990fcf3-f600-4918-a568-b7eda829b9bf.png",
+      material: "PP",
+      thickness: "0.04-0.06 มม.",
+      usage: "อาหารร้อน",
       popular: true
     },
     {
@@ -77,7 +82,10 @@ const ProductShowcase = () => {
       description: "LLDPE เนื้อเหนียวยืดหยุ่น ทนเย็น",
       sizes: "5×8″, 6×9″, 8×12″, 9×14″, 12×18″",
       features: "Food Grade, เหมาะแช่แข็ง/ใส่อาหารทั่วไป ไม่กรอบแตก",
-      image: "/lovable-uploads/11fd655f-cc96-4f96-aa4e-1dbf4878ac75.png"
+      image: "/lovable-uploads/11fd655f-cc96-4f96-aa4e-1dbf4878ac75.png",
+      material: "LLDPE",
+      thickness: "0.02-0.04 มม.",
+      usage: "อาหารเย็น/แช่แข็ง"
     },
     {
       id: 3,
@@ -86,7 +94,10 @@ const ProductShowcase = () => {
       description: "High-density PE เนื้อขุ่น แข็งแรง รับน้ำหนักดี",
       sizes: "6×11″, 6×14″, 8×15″, 9×18″",
       features: "หนา คมซีลดี เหมาะของมีคม/ของหนัก",
-      image: IMG.hdpe
+      image: IMG.hdpe,
+      material: "HDPE",
+      thickness: "0.05-0.08 มม.",
+      usage: "ของมีคม/หนัก"
     },
     {
       id: 4,
@@ -95,7 +106,10 @@ const ProductShowcase = () => {
       description: "OPP ใสกรอบ เงา สวย ใช้แพ็กเสื้อผ้า/ของชำร่วย",
       sizes: "8×12+2″, 10×15+2″, 12×18+2″",
       features: "ใสชัด เหมาะโชว์สินค้า เลือกแบบแถบกาวสำเร็จ",
-      image: IMG.opp
+      image: IMG.opp,
+      material: "OPP",
+      thickness: "0.03-0.05 มม.",
+      usage: "บรรจุภัณฑ์แสดงสินค้า"
     },
     {
       id: 5,
@@ -105,6 +119,9 @@ const ProductShowcase = () => {
       sizes: "6×14″, 8×16″, 9×18″, 12×20″",
       features: "มีหูหิ้ว แข็งแรง สั่งผลิตพิมพ์โลโก้ได้",
       image: IMG.carry,
+      material: "HDPE/LLDPE",
+      thickness: "0.03-0.05 มม.",
+      usage: "ถุงหิ้วช็อปปิ้ง",
       popular: true
     },
     {
@@ -114,7 +131,10 @@ const ProductShowcase = () => {
       description: "สายรัด PP ใช้กับเครื่อง/รัดมือ",
       sizes: "กว้าง 9, 12, 15 มม. (หนา 0.6–1.0 มม.)",
       features: "เหนียว แข็งแรง สีมาตรฐาน เหมาะงานขนส่ง",
-      image: "/lovable-uploads/e03d83ef-459e-4b86-8711-2791360b3b1a.png"
+      image: "/lovable-uploads/e03d83ef-459e-4b86-8711-2791360b3b1a.png",
+      material: "PP",
+      thickness: "0.6-1.0 มม.",
+      usage: "รัดกล่อง/ขนส่ง"
     },
     {
       id: 7,
@@ -123,7 +143,10 @@ const ProductShowcase = () => {
       description: "กันกระแทก ปกป้องสินค้า",
       sizes: "กว้าง 0.65/1.30 ม. (เลือกเส้นผ่านฟอง 10–28 มม.)",
       features: "เลือก 1 ชั้น/2 ชั้น ตัดตามสั่งได้",
-      image: "/lovable-uploads/ac47e2c4-f4d4-4720-84ab-b7eeb0c90532.png"
+      image: "/lovable-uploads/ac47e2c4-f4d4-4720-84ab-b7eeb0c90532.png",
+      material: "PE/EPE",
+      thickness: "1-3 มม.",
+      usage: "กันกระแทก"
     },
     {
       id: 8,
@@ -133,6 +156,9 @@ const ProductShowcase = () => {
       sizes: "ความยาวลวด 8″, 12″, 16″ (หน้าซีล 2–5 มม.)",
       features: "ซีลแน่น ตั้งเวลาตามความหนาถุง มีอะไหล่ลวด/เทปเทฟลอน",
       image: IMG.sealer,
+      material: "โลหะ/พลาสติก",
+      thickness: "-",
+      usage: "ซีลปากถุง",
       popular: true
     },
     {
@@ -142,7 +168,10 @@ const ProductShowcase = () => {
       description: "เชือกฟาง PP สำหรับมัดของ ห่อพัสดุ งานโลจิสติกส์",
       sizes: "ขนาด 2 มม., 3 มม., 4 มม., 5 มม. (ความยาว 100-500 เมตร)",
       features: "แข็งแรง ทนทาน หลากสี (แดง, เขียว, น้ำเงิน, ขาว, เหลือง) มัดง่าย",
-      image: "/lovable-uploads/72265905-916c-4ada-bb07-556d3827f82e.png"
+      image: "/lovable-uploads/72265905-916c-4ada-bb07-556d3827f82e.png",
+      material: "PP",
+      thickness: "2-5 มม.",
+      usage: "มัดของ/ห่อพัสดุ"
     },
     {
       id: 10,
@@ -151,7 +180,10 @@ const ProductShowcase = () => {
       description: "ถุงขยะและถุงหูหิ้วหลากสี HDPE/LLDPE คุณภาพสูง",
       sizes: "18×20″, 20×24″, 24×28″, 30×40″ (หูหิ้ว 6×14″, 8×16″)",
       features: "หลากสี (ดำ, ใส, แดง, เขียว, น้ำเงิน, เหลือง, ม่วง) แข็งแรงทนทาน",
-      image: "/lovable-uploads/d700b795-9155-4d5b-be9b-538a3178a098.png"
+      image: "/lovable-uploads/d700b795-9155-4d5b-be9b-538a3178a098.png",
+      material: "HDPE/LLDPE",
+      thickness: "0.02-0.04 มม.",
+      usage: "ขยะ/หิ้วทั่วไป"
     },
     {
       id: 11,
@@ -161,6 +193,9 @@ const ProductShowcase = () => {
       sizes: "A4 (24×34+4 ซม.), A5 (17×24+4 ซม.), A6 (12×17+4 ซม.)",
       features: "กันน้ำ 100% แถบกาวแน่น ปิดปากง่าย เหมาะส่งของออนไลน์",
       image: "/lovable-uploads/461b0186-b282-43d0-8f7b-26fd35b739b4.png",
+      material: "PE",
+      thickness: "0.06-0.08 มม.",
+      usage: "ส่งของไปรษณีย์",
       popular: true
     },
     {
@@ -170,7 +205,10 @@ const ProductShowcase = () => {
       description: "ม้วนพลาสติก PE/PP หลากลาย ตัดได้ตามต้องการ",
       sizes: "กว้าง 50-200 ซม., หนา 20-100 ไมครอน, ความยาวตามสั่ง",
       features: "หลายลาย หลายสี ตัดขนาดได้ตามต้องการ เหมาะงานอุตสาหกรรม",
-      image: "/lovable-uploads/e0c8695f-b18a-4c19-99ae-6529ff7b81fc.png"
+      image: "/lovable-uploads/e0c8695f-b18a-4c19-99ae-6529ff7b81fc.png",
+      material: "PE/PP",
+      thickness: "20-100 ไมครอน",
+      usage: "อุตสาหกรรม"
     },
     {
       id: 13,
@@ -179,7 +217,10 @@ const ProductShowcase = () => {
       description: "ชุดอุปกรณ์บรรจุภัณฑ์ครบครัน เทปหลากสี ฟิล์มยืด หนังยาง",
       sizes: "เทป 1-3 นิ้ว, ฟิล์มยืด 50 ซม., หนังยางหลายขนาด",
       features: "หลากสี แข็งแรงทนทาน เหมาะงานโลจิสติกส์ ราคาส่ง",
-      image: "/lovable-uploads/c33a159c-22a7-4ea6-9fc4-ef0b4c558f48.png"
+      image: "/lovable-uploads/c33a159c-22a7-4ea6-9fc4-ef0b4c558f48.png",
+      material: "PP/PE/ยาง",
+      thickness: "หลากหนา",
+      usage: "โลจิสติกส์/แพ็คกิ้ง"
     }
   ];
 
@@ -301,22 +342,25 @@ const ProductShowcase = () => {
                     <Info className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground leading-relaxed">{product.features}</span>
                   </div>
-                </div>
-
-                {/* CTA Button */}
-                {product.isCustom ? (
-                  <div className="space-y-2 mt-4">
-                    <button className="w-full contact-btn phone-btn text-sm py-2">สอบถามราคา</button>
-                    <Link 
-                      to="/print-catalog" 
-                      className="block w-full bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-lg py-2 text-sm transition-colors text-center"
-                    >
-                      ดูตัวอย่างเพิ่มเติม
-                    </Link>
+                  
+                  {/* Additional Details */}
+                  <div className="mt-3 pt-3 border-t border-border/20">
+                    <div className="grid grid-cols-1 gap-2 text-xs">
+                      <div className="flex justify-between items-center">
+                        <span className="text-muted-foreground">วัสดุ:</span>
+                        <span className="font-medium text-foreground">{product.material || "PE/PP"}</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-muted-foreground">ความหนา:</span>
+                        <span className="font-medium text-foreground">{product.thickness || "ตามมาตรฐาน"}</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-muted-foreground">การใช้งาน:</span>
+                        <span className="font-medium text-foreground">{product.usage || "ทั่วไป"}</span>
+                      </div>
+                    </div>
                   </div>
-                ) : (
-                  <button className="w-full contact-btn phone-btn text-sm py-2 mt-4">สอบถามราคา</button>
-                )}
+                </div>
               </div>
             </div>
           ))}
