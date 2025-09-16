@@ -8,11 +8,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-primary">
               กันเองพลาสติก บางน้ำจืด
             </h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              ผู้เชี่ยวชาญด้านถุงพลาสติกและบรรจุภัณฑ์ 
-              มากกว่า 40 ปีของประสบการณ์ 
-              คุณภาพมาตรฐาน ราคาขายส่ง
-            </p>
+            <p className="text-muted-foreground text-sm leading-relaxed">ผู้เชี่ยวชาญด้านถุงพลาสติกและบรรจุภัณฑ์ มากกว่า 15 ปีของประสบการณ์ คุณภาพมาตรฐาน ราคาขายส่ง</p>
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Clock className="w-4 h-4" />
               <span>จันทร์-เสาร์ 08:00-17:00 น.</span>
