@@ -238,19 +238,22 @@ const PrintCatalog = () => {
         {/* Contact CTA */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-              <a href="tel:081-922-2884" className="flex-1 bg-gradient-to-r from-green-600 to-green-700 text-white font-medium rounded-full px-6 py-4 transition-all duration-300 hover:from-green-700 hover:to-green-800 hover:shadow-lg hover:scale-105 inline-flex items-center justify-center gap-3">
-                <Phone className="w-5 h-5" />
-                โทรสอบถาม 081-922-2884
+            <div className="flex gap-6 justify-center">
+              <a 
+                href="tel:081-922-2884" 
+                className="w-16 h-16 bg-green-600 hover:bg-green-700 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+                title="โทรสอบถาม: 081-922-2884"
+              >
+                <Phone className="w-7 h-7 text-white" />
               </a>
               <a 
                 href="https://line.me/ti/p/~tee4828" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="flex-1 bg-gradient-to-r from-green-500 to-green-600 text-white font-medium rounded-full px-6 py-4 transition-all duration-300 hover:from-green-600 hover:to-green-700 hover:shadow-lg hover:scale-105 inline-flex items-center justify-center gap-3"
+                className="w-16 h-16 bg-green-600 hover:bg-green-700 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+                title="เพิ่มเพื่อน LINE: tee4828"
               >
-                <i className="bi bi-line text-xl"></i>
-                LINE: tee4828
+                <i className="bi bi-line text-white text-2xl"></i>
               </a>
             </div>
           </div>
