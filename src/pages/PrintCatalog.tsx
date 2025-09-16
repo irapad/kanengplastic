@@ -1,4 +1,4 @@
-import { ArrowLeft, Palette, X } from "lucide-react";
+import { ArrowLeft, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import catalogKonomiGreen from "../assets/catalog-konomi-classic-green.jpg";
@@ -217,25 +217,6 @@ const PrintCatalog = () => {
             </button>)}
         </div>
 
-        {/* Available Status */}
-        <div className="text-center py-8 bg-card/30 backdrop-blur-sm rounded-2xl border border-border/50 mb-8">
-          <Palette className="w-12 h-12 text-primary mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-foreground mb-4">งานพิมพ์ 1-8 สี พร้อมให้บริการ</h3>
-          <p className="text-muted-foreground mb-4 max-w-xl mx-auto">
-            คลิกที่รูปเพื่อดูขนาดใหญ่
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <div className="bg-gradient-to-r from-green-500/20 to-teal-500/20 px-4 py-2 rounded-full">
-              <span className="text-sm font-medium">✅ 1-4 สี พร้อมแล้ว</span>
-            </div>
-            <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 px-4 py-2 rounded-full">
-              <span className="text-sm font-medium">✅ 5-6 สี พร้อมแล้ว</span>
-            </div>
-            <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 px-4 py-2 rounded-full">
-              <span className="text-sm font-medium">✅ 7-8 สี พร้อมแล้ว</span>
-            </div>
-          </div>
-        </div>
 
         {/* Image Gallery */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
