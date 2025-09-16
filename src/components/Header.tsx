@@ -50,12 +50,6 @@ const Header = () => {
             >
               สินค้า
             </button>
-            <Link
-              to="/print-catalog"
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              ดูแคตตาล็อกถุงพิมพ์ลาย
-            </Link>
             <button
               onClick={() => scrollToSection('about')}
               className="text-foreground hover:text-primary transition-colors"
@@ -68,6 +62,12 @@ const Header = () => {
             >
               ติดต่อ
             </button>
+            <Link
+              to="/print-catalog"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              ดูแคตตาล็อกถุงพิมพ์ลาย
+            </Link>
           </nav>
 
           {/* Contact Button */}
@@ -108,13 +108,6 @@ const Header = () => {
               >
                 สินค้า
               </button>
-              <Link
-                to="/print-catalog"
-                className="text-left text-foreground hover:text-primary transition-colors py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                ดูแคตตาล็อกถุงพิมพ์ลาย
-              </Link>
               <button
                 onClick={() => scrollToSection('about')}
                 className="text-left text-foreground hover:text-primary transition-colors py-2"
@@ -127,6 +120,13 @@ const Header = () => {
               >
                 ติดต่อ
               </button>
+              <Link
+                to="/print-catalog"
+                className="text-left text-foreground hover:text-primary transition-colors py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                ดูแคตตาล็อกถุงพิมพ์ลาย
+              </Link>
               <a
                 href="tel:0819222884"
                 className="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-primary to-primary-glow rounded-full text-primary-foreground font-semibold text-sm hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:scale-105 w-fit"
