@@ -360,6 +360,18 @@ const ProductShowcase = () => {
                       </div>
                     </div>
                   </div>
+
+                  {/* Print Catalog Button for Custom Products */}
+                  {product.isCustom && (
+                    <div className="mt-4 pt-3 border-t border-border/20">
+                      <Link 
+                        to="/print-catalog" 
+                        className="block w-full bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-lg py-2 text-sm transition-colors text-center font-medium"
+                      >
+                        ดูแคตตาล็อกถุงพิมพ์ลาย
+                      </Link>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
