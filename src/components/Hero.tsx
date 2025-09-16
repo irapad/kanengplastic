@@ -39,54 +39,50 @@ const Hero = () => {
           </div>
 
           {/* Contact Action Buttons */}
-          <div className="space-y-6">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="tel:0819222884"
-                className="flex items-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-110 hover:shadow-xl active:scale-95 w-full sm:w-auto justify-center"
-              >
-                <Phone className="w-5 h-5" />
-                <span>โทร 081-922-2884</span>
-              </a>
-              
-              <a
-                href="https://line.me/ti/p/~tee4828"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = "line://ti/p/~tee4828";
-                  setTimeout(() => {
-                    window.open("https://line.me/ti/p/~tee4828", "_blank", "noopener,noreferrer");
-                  }, 300);
-                }}
-                className="flex items-center gap-3 bg-[#00B900] hover:bg-[#00B900]/90 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-110 hover:shadow-xl active:scale-95 w-full sm:w-auto justify-center"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MessageCircle className="w-5 h-5" />
-                <span>Line Chat</span>
-              </a>
-              
-              <a
-                href="https://share.google/UC3c93WBSmoJSOyEc"
-                className="flex items-center gap-3 bg-gray-700 hover:bg-gray-600 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-110 hover:shadow-xl active:scale-95 w-full sm:w-auto justify-center"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MapPin className="w-5 h-5" />
-                <span>ตำแหน่ง</span>
-              </a>
-            </div>
+          <div className="space-y-4 max-w-sm mx-auto">
+            <a
+              href="tel:0819222884"
+              className="flex items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 w-full min-w-[280px]"
+            >
+              <Phone className="w-5 h-5" />
+              <span>โทร 081-922-2884</span>
+            </a>
+            
+            <a
+              href="https://line.me/ti/p/~tee4828"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "line://ti/p/~tee4828";
+                setTimeout(() => {
+                  window.open("https://line.me/ti/p/~tee4828", "_blank", "noopener,noreferrer");
+                }, 300);
+              }}
+              className="flex items-center justify-center gap-3 bg-[#00B900] hover:bg-[#00B900]/90 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 w-full min-w-[280px]"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle className="w-5 h-5" />
+              <span>Line Chat</span>
+            </a>
+            
+            <a
+              href="https://share.google/UC3c93WBSmoJSOyEc"
+              className="flex items-center justify-center gap-3 bg-gray-700 hover:bg-gray-600 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 w-full min-w-[280px]"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MapPin className="w-5 h-5" />
+              <span>ตำแหน่ง</span>
+            </a>
             
             {/* Catalog Button */}
-            <div className="flex justify-center">
-              <Link
-                to="/print-catalog"
-                className="inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-110 hover:shadow-xl active:scale-95 shadow-lg border-2 border-primary/20 hover:border-primary/40"
-              >
-                <Package className="w-5 h-5" />
-                <span>ดูแคตตาล็อกถุงพิมพ์ลาย</span>
-              </Link>
-            </div>
+            <Link
+              to="/print-catalog"
+              className="flex items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 w-full min-w-[280px]"
+            >
+              <Package className="w-5 h-5" />
+              <span>ดูแคตตาล็อกถุงพิมพ์ลาย</span>
+            </Link>
           </div>
         </div>
       </div>
