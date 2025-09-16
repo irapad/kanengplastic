@@ -1,6 +1,7 @@
 import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,6 +50,12 @@ const Header = () => {
             >
               สินค้า
             </button>
+            <Link
+              to="/print-catalog"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              ดูแคตตาล็อกถุงพิมพ์ลาย
+            </Link>
             <button
               onClick={() => scrollToSection('about')}
               className="text-foreground hover:text-primary transition-colors"
@@ -101,6 +108,13 @@ const Header = () => {
               >
                 สินค้า
               </button>
+              <Link
+                to="/print-catalog"
+                className="text-left text-foreground hover:text-primary transition-colors py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                ดูแคตตาล็อกถุงพิมพ์ลาย
+              </Link>
               <button
                 onClick={() => scrollToSection('about')}
                 className="text-left text-foreground hover:text-primary transition-colors py-2"
