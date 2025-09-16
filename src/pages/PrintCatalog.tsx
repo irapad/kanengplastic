@@ -206,7 +206,7 @@ const PrintCatalog = () => {
           <h2 className="text-4xl font-bold text-foreground mb-4">
             ตัวอย่างงานพิมพ์คุณภาพสูง
           </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">ผลงานพิมพ์/ออกแบบถุงพลาสติก 1-8 สี คุณภาพจากกันเองพลาสติก(บางน้ำจืด)</p>
+          <p className="text-xl md:text-2xl text-foreground font-bold max-w-3xl mx-auto leading-relaxed">ผลงานพิมพ์/ออกแบบถุงพลาสติก <span className="text-primary">1-8 สี</span> คุณภาพจาก<span className="text-primary">กันเองพลาสติก(บางน้ำจืด)</span></p>
         </div>
 
         {/* Category Filter */}
