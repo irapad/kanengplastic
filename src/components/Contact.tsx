@@ -26,7 +26,7 @@ const Contact = () => {
               <div>
                 <h4 className="font-semibold text-card-foreground">ที่ตั้งร้าน</h4>
                 <p className="text-muted-foreground">บางน้ำจืด สมุทรสาคร</p>
-                <a href="https://share.google/AN5q4WMw6BTJ9aWdM" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 text-sm">
+                <a href="https://share.google/UC3c93WBSmoJSOyEc" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 text-sm">
                   ดูแผนที่ →
                 </a>
               </div>
