@@ -79,29 +79,6 @@ const Contact = () => {
                 </p>
               </div>
 
-              {/* Location */}
-              <div className="bg-card/60 backdrop-blur-sm rounded-xl p-6 border border-muted/20">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-10 h-10 bg-muted/20 rounded-lg flex items-center justify-center">
-                      <MapPin className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-card-foreground text-sm">ที่ตั้งร้าน</h4>
-                      <p className="text-muted-foreground text-sm">บางน้ำจืด สมุทรสาคร</p>
-                    </div>
-                  </div>
-                  <a 
-                    href="https://share.google/AN5q4WMw6BTJ9aWdM" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-lg flex items-center justify-center transition-colors group"
-                    title="ดูแผนที่"
-                  >
-                    <MapPin className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                  </a>
-                </div>
-              </div>
             </div>
 
             {/* Services Info */}
