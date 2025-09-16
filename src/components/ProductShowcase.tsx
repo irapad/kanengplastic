@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Search, Package, Info, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import plasticBagTurtle from "../assets/plastic-bag-turtle-brand.jpg";
 import llFoodGradeBags from "../assets/ll-food-grade-bags.jpg";
@@ -254,9 +255,12 @@ const ProductShowcase = () => {
                 {/* CTA Button */}
                 {product.isCustom ? <div className="space-y-2 mt-4">
                     <button className="w-full contact-btn phone-btn text-sm py-2">สอบถามราคา</button>
-                    <button className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-lg py-2 text-sm transition-colors">
+                    <Link 
+                      to="/print-catalog" 
+                      className="block w-full bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-lg py-2 text-sm transition-colors text-center"
+                    >
                       ดูตัวอย่างเพิ่มเติม
-                    </button>
+                    </Link>
                   </div> : <button className="w-full contact-btn phone-btn text-sm py-2 mt-4">สอบถามราคา</button>}
               </div>
             </div>)}
