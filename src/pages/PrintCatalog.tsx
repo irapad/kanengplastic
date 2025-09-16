@@ -183,15 +183,15 @@ const PrintCatalog = () => {
   const categories = ["ทั้งหมด", "1 สี", "2 สี", "3 สี", "4 สี", "5 สี", "6 สี", "8 สี"];
   const filteredItems = selectedCategory === "ทั้งหมด" ? catalogItems : catalogItems.filter(item => item.category === selectedCategory);
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-background">
+    <div className="min-h-screen bg-background">
       {/* Header */}
-      <div className="sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-border/50">
+      <div className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b border-border shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <Link to="/" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+              <Link to="/" className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium">
                 <ArrowLeft className="w-5 h-5" />
-                <span className="font-medium">กลับหน้าหลัก</span>
+                <span>กลับหน้าหลัก</span>
               </Link>
             </div>
             <h1 className="text-2xl font-bold text-foreground">แคตตาล็อกงานพิมพ์</h1>
@@ -200,73 +200,85 @@ const PrintCatalog = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
-        {/* Title Section */}
-        <div className="text-center mb-8">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
-            ตัวอย่างงานพิมพ์คุณภาพสูง
-          </h2>
-          <p className="text-xl md:text-2xl text-foreground font-bold max-w-3xl mx-auto leading-relaxed">ผลงานพิมพ์/ออกแบบถุงพลาสติก <span className="text-primary">1-8 สี</span> คุณภาพจาก<span className="text-primary">กันเองพลาสติก(บางน้ำจืด)</span></p>
-        </div>
+      <section className="section-container bg-background">
+        <div className="container mx-auto px-4">
+          {/* Title Section */}
+          <div className="text-center mb-12 fade-in">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+              <span className="text-primary">ตัวอย่างงาน</span>
+              <span className="text-foreground">พิมพ์คุณภาพสูง</span>
+            </h2>
+            <p className="text-xl md:text-2xl text-foreground font-bold max-w-3xl mx-auto leading-relaxed">ผลงานพิมพ์/ออกแบบถุงพลาสติก <span className="text-primary">1-8 สี</span> คุณภาพจาก<span className="text-primary">กันเองพลาสติก(บางน้ำจืด)</span></p>
+          </div>
 
-        {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-3 mb-8">
-          {categories.map(category => 
-            <button 
-              key={category} 
-              onClick={() => setSelectedCategory(category)} 
-              className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
-                selectedCategory === category 
-                  ? "bg-primary text-primary-foreground shadow-lg scale-105" 
-                  : "bg-card hover:bg-card/80 text-muted-foreground hover:text-foreground border border-border/50"
-              }`}
-            >
-              {category}
-            </button>
-          )}
-        </div>
-
-
-        {/* Image Gallery */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
-          {filteredItems.map(item => 
-            <div 
-              key={item.id} 
-              className="bg-card/50 backdrop-blur-sm rounded-xl overflow-hidden border border-border/50 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group" 
-              onClick={() => setSelectedImage(item.image)}
-            >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={item.image} 
-                  alt={item.title} 
-                  className="w-full h-full object-contain bg-white group-hover:scale-105 transition-transform duration-300" 
-                />
-              </div>
-              <div className="p-4">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-xs px-2 py-1 bg-primary/20 text-primary rounded-full font-medium">
-                    {item.category}
-                  </span>
-                </div>
-                <h3 className="font-semibold text-foreground text-sm leading-tight">
-                  {item.title}
-                </h3>
-              </div>
+          {/* Category Filter */}
+          <div className="mb-8 space-y-4 fade-in">
+            <div className="flex flex-wrap justify-center gap-2">
+              {categories.map(category => 
+                <button 
+                  key={category} 
+                  onClick={() => setSelectedCategory(category)} 
+                  className={`px-4 py-2 rounded-full text-sm transition-all ${
+                    selectedCategory === category 
+                      ? "bg-primary text-primary-foreground shadow-lg scale-105" 
+                      : "bg-card/50 text-foreground hover:bg-primary/10 hover:scale-105"
+                  }`}
+                >
+                  {category}
+                </button>
+              )}
             </div>
-          )}
-        </div>
+          </div>
 
-      </div>
+          {/* Image Gallery */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {filteredItems.map((item, index) => 
+              <div 
+                key={item.id} 
+                className={`product-card group fade-in stagger-${index % 6 + 1} cursor-pointer`}
+                onClick={() => setSelectedImage(item.image)}
+              >
+                <div className="aspect-[4/3] overflow-hidden rounded-xl mb-4">
+                  <img 
+                    src={item.image} 
+                    alt={item.title} 
+                    className="w-full h-full object-contain bg-white transition-transform duration-500 group-hover:scale-110" 
+                  />
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs px-2 py-1 bg-primary/10 text-primary rounded-full font-medium border border-primary/20">
+                      {item.category}
+                    </span>
+                  </div>
+                  <h3 className="font-bold text-lg text-foreground group-hover:text-primary transition-colors leading-tight">
+                    {item.title}
+                  </h3>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
 
       {/* Image Modal */}
-      {selectedImage && <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+      {selectedImage && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
           <div className="relative max-w-4xl max-h-[90vh] w-full">
-            <button onClick={() => setSelectedImage(null)} className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors">
+            <button 
+              onClick={() => setSelectedImage(null)} 
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors p-2 rounded-full hover:bg-white/10"
+            >
               <X className="w-8 h-8" />
             </button>
-            <img src={selectedImage} alt="Catalog preview" className="w-full h-full object-contain rounded-lg bg-white" />
+            <img 
+              src={selectedImage} 
+              alt="Catalog preview" 
+              className="w-full h-full object-contain rounded-lg bg-white shadow-2xl" 
+            />
           </div>
-        </div>}
+        </div>
+      )}
 
       <FloatingContactButtons />
     </div>
