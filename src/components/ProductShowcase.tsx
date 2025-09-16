@@ -2,18 +2,7 @@ import { useState } from "react";
 import { Search, Package, Info, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import plasticBagTurtle from "../assets/plastic-bag-turtle-brand.jpg";
-import llFoodGradeBags from "../assets/ll-food-grade-bags.jpg";
-import hdpeBagsPackage from "../assets/hdpe-bags-package.jpg";
-import oppCellophane from "../assets/opp-cellophane-bags.jpg";
-import shoppingCarryBags from "../assets/shopping-carry-bags.jpg";
-import ldpePlasticRoll from "../assets/ldpe-plastic-roll.jpg";
-import tapeOpp from "../assets/tape-opp.jpg";
-import stretchWrapFilm from "../assets/stretch-wrap-film.jpg";
-import ppStrappingBand from "../assets/pp-strapping-band.jpg";
-import bubbleWrapRoll from "../assets/bubble-wrap-roll.jpg";
-import impulseSealerMachine from "../assets/impulse-sealer-machine.jpg";
-import uploadedTurtleBag from "/lovable-uploads/4209839a-c40c-4c78-9909-00f9ca7c6e91.png";
+// ลบ import รูปที่ไม่จำเป็น เพื่อลดขนาด bundle
 
 /**
  * ✅ สิ่งที่อัปเดตให้แล้ว
@@ -23,25 +12,7 @@ import uploadedTurtleBag from "/lovable-uploads/4209839a-c40c-4c78-9909-00f9ca7c
  * - สามารถนำไปใช้ได้ทันที ไม่ต้อง import ไฟล์รูปในโปรเจกต์
  */
 
-const IMG = {
-  ppHot: "/lovable-uploads/55dd2354-390b-4316-a894-51c350244e85.png",
-  // ใช้รูปเดิมกลับมา
-  llFood: "/lovable-uploads/e636e5b1-3813-422a-bf7e-29a10b16afe0.png",
-  // ใช้รูป ถุงเย็น FoodGrade ที่ผู้ใช้อัปโหลดมา
-  hdpe: "/lovable-uploads/e2a6298a-538e-4aa1-9101-b1fbf252732b.png",
-  // ใช้รูปใหม่ที่ผู้ใช้อัปโหลดมา
-  opp: "/lovable-uploads/b3599718-a9fa-42d7-aa4a-3ed27b8dcfce.png",
-  // ใช้รูป OPP ที่ผู้ใช้อัปโหลดมา
-  carry: "/lovable-uploads/88bdf79f-3775-4350-a616-e977b252bdc9.png",
-  // ใช้รูป ถุงหิ้ว ที่ผู้ใช้อัปโหลดมา
-  roll: ldpePlasticRoll,
-  tape: tapeOpp,
-  stretch: stretchWrapFilm,
-  strap: "/lovable-uploads/aa5b6748-6055-4fd4-bdd7-c79ebce56f27.png",
-  // ใช้รูป สายรัด PP ที่ผู้ใช้อัปโหลดมา
-  bubble: bubbleWrapRoll,
-  sealer: impulseSealerMachine
-};
+// ใช้ URL โดยตรงแทน import เพื่อลด bundle size
 
 const ProductShowcase = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -94,7 +65,7 @@ const ProductShowcase = () => {
       description: "High-density PE เนื้อขุ่น แข็งแรง รับน้ำหนักดี",
       sizes: "6×11″, 6×14″, 8×15″, 9×18″",
       features: "หนา คมซีลดี เหมาะของมีคม/ของหนัก",
-      image: IMG.hdpe,
+      image: "/lovable-uploads/e2a6298a-538e-4aa1-9101-b1fbf252732b.png",
       material: "HDPE",
       thickness: "0.05-0.08 มม.",
       usage: "ของมีคม/หนัก"
@@ -106,7 +77,7 @@ const ProductShowcase = () => {
       description: "OPP ใสกรอบ เงา สวย ใช้แพ็กเสื้อผ้า/ของชำร่วย",
       sizes: "8×12+2″, 10×15+2″, 12×18+2″",
       features: "ใสชัด เหมาะโชว์สินค้า เลือกแบบแถบกาวสำเร็จ",
-      image: IMG.opp,
+      image: "/lovable-uploads/b3599718-a9fa-42d7-aa4a-3ed27b8dcfce.png",
       material: "OPP",
       thickness: "0.03-0.05 มม.",
       usage: "บรรจุภัณฑ์แสดงสินค้า"
@@ -118,7 +89,7 @@ const ProductShowcase = () => {
       description: "ผลิตจาก HDPE/LLDPE ตามสเปกงานร้านค้า",
       sizes: "6×14″, 8×16″, 9×18″, 12×20″",
       features: "มีหูหิ้ว แข็งแรง สั่งผลิตพิมพ์โลโก้ได้",
-      image: IMG.carry,
+      image: "/lovable-uploads/88bdf79f-3775-4350-a616-e977b252bdc9.png",
       material: "HDPE/LLDPE",
       thickness: "0.03-0.05 มม.",
       usage: "ถุงหิ้วช็อปปิ้ง",
@@ -155,7 +126,7 @@ const ProductShowcase = () => {
       description: "เครื่องซีลมือกด ใช้กับถุง PE/PP/OPP",
       sizes: "ความยาวลวด 8″, 12″, 16″ (หน้าซีล 2–5 มม.)",
       features: "ซีลแน่น ตั้งเวลาตามความหนาถุง มีอะไหล่ลวด/เทปเทฟลอน",
-      image: IMG.sealer,
+      image: "/lovable-uploads/9f0a0826-631c-4241-b3a2-4c6cfe387b72.png",
       material: "โลหะ/พลาสติก",
       thickness: "-",
       usage: "ซีลปากถุง",
@@ -297,8 +268,9 @@ const ProductShowcase = () => {
                     <img 
                       src={product.image} 
                       alt={product.name} 
-                      loading="lazy" 
-                      className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" 
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 bg-black/20">
