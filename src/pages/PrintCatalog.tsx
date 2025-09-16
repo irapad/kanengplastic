@@ -1,11 +1,18 @@
 import { ArrowLeft, Download, Palette, Info, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import catalogKonomiGreen from "../assets/catalog-konomi-classic-green.jpg";
 import catalogKonomiRed from "../assets/catalog-konomi-spicy-red.jpg";
 import catalogTaokaenoi from "../assets/catalog-taokaenoi-clear.jpg";
 import catalogUluck from "../assets/catalog-uluck-mop.jpg";
+import catalogIntexPillow from "../assets/catalog-intex-pillow.jpg";
+import catalogElephantSeaweed from "../assets/catalog-elephant-seaweed.jpg";
+import catalogEagleMop from "../assets/catalog-eagle-mop.jpg";
+import catalogBigboomSeaweed from "../assets/catalog-bigboom-seaweed.jpg";
 
 const PrintCatalog = () => {
+  const [selectedCategory, setSelectedCategory] = useState("ทั้งหมด");
+  
   const catalogItems = [
     {
       id: 1,
@@ -66,7 +73,7 @@ const PrintCatalog = () => {
     },
     {
       id: 4,
-      title: "U LUCK - ผ้าม็อป เขียวทไวท์",
+      title: "U LUCK - ผ้าม็อป เขียวไวท์",
       colors: 2,
       description: "ถุงหูหิ้วพิมพ์ 2 สี ลายผ้าม็อปยี่ห้อ U LUCK",
       image: catalogUluck,
@@ -82,10 +89,71 @@ const PrintCatalog = () => {
         "เหมาะสำหรับสินค้าภายในบ้าน"
       ],
       category: "2 สี"
+    },
+    {
+      id: 5,
+      title: "A_Intex - หมอน Polyester",
+      colors: 2,
+      description: "ถุงบรรจุหมอนพิมพ์ 2 สี (ฟ้า + ขาว) แบรนด์ A_Intex",
+      image: catalogIntexPillow,
+      specifications: [
+        "ขนาด: 32×19 นิ้ว",
+        "พิมพ์ 2 สี (ฟ้า + ขาว)",
+        "วัสดุ: LDPE หรือ PP ใส",
+        "สินค้า: หมอนโพลีเอสเตอร์ 100%"
+      ],
+      features: [
+        "พิมพ์โลโก้และข้อมูลสินค้าคมชัด",
+        "สีฟ้าสดใส ตัดกับพื้นขาว",
+        "เหมาะสำหรับสินค้าเครื่องนอน"
+      ],
+      category: "2 สี"
+    },
+    {
+      id: 6,
+      title: "สาหร่ายช้าง - รสเผ็ด",
+      colors: 2,
+      description: "ถุงสาหร่ายพิมพ์ 2 สี (แดง + ขาว) แบรนด์สาหร่ายช้าง",
+      image: catalogElephantSeaweed,
+      specifications: [
+        "ขนาด: ตามมาตรฐานถุงสาหร่าย",
+        "พิมพ์ 2 สี (แดง + ขาว)",
+        "วัสดุ: OPP หรือ PP ใส",
+        "น้ำหนัก: 5 กรัม"
+      ],
+      features: [
+        "พิมพ์ลายช้างสีแดงโดดเด่น",
+        "ตัวอักษรขาวคมชัดบนพื้นแดง",
+        "เหมาะสำหรับขนมสาหร่าย"
+      ],
+      category: "2 สี"
+    },
+    {
+      id: 7,
+      title: "Eagle Mop - ม็อปนกอินทรี",
+      colors: 2,
+      description: "ถุงม็อพพิมพ์ 2 สี (ดำ + ทอง) ลายนกอินทรีคลาสสิก",
+      image: catalogEagleMop,
+      specifications: [
+        "ขนาด: 13×18 นิ้ว",
+        "พิมพ์ 2 สี (ดำ + ทอง)",
+        "วัสดุ: HDPE หรือ LDPE",
+        "สินค้า: ม็อป 12 นิ้ว"
+      ],
+      features: [
+        "พิมพ์ลายนกอินทรีสีทองบนพื้นเทา",
+        "ตัวอักษรสีดำคมชัดอ่านง่าย",
+        "เหมาะสำหรับอุปกรณ์ทำความสะอาด"
+      ],
+      category: "2 สี"
     }
   ];
 
   const colorCategories = ["ทั้งหมด", "1 สี", "2 สี", "3 สี", "4 สี", "5 สี", "6 สี", "7 สี", "8 สี"];
+
+  const filteredItems = catalogItems.filter(item => {
+    return selectedCategory === "ทั้งหมด" || item.category === selectedCategory;
+  });
 
   return (
     <div className="min-h-screen bg-background">
@@ -121,7 +189,12 @@ const PrintCatalog = () => {
             {colorCategories.map((category) => (
               <button
                 key={category}
-                className="px-6 py-2 rounded-full border-2 border-primary/20 text-foreground hover:bg-primary/10 hover:border-primary/40 transition-all duration-300 hover:scale-105"
+                onClick={() => setSelectedCategory(category)}
+                className={`px-6 py-2 rounded-full border-2 transition-all duration-300 hover:scale-105 ${
+                  selectedCategory === category
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "border-primary/20 text-foreground hover:bg-primary/10 hover:border-primary/40"
+                }`}
               >
                 <span className="flex items-center gap-2">
                   <Palette className="w-4 h-4" />
@@ -134,7 +207,7 @@ const PrintCatalog = () => {
 
         {/* Catalog Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          {catalogItems.map((item, index) => (
+          {filteredItems.map((item, index) => (
             <div
               key={item.id}
               className={`bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border/50 shadow-lg hover:shadow-xl transition-all duration-300 fade-in stagger-${index + 1}`}
