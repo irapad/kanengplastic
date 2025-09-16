@@ -19,7 +19,7 @@ const Contact = () => {
             <h3 className="text-2xl font-bold mb-6">ข้อมูลการติดต่อ</h3>
             
             {/* Location Info */}
-            <div className="flex items-center space-x-4 p-6 bg-card rounded-xl">
+            <div className="flex items-center space-x-4 p-6 bg-card border border-border shadow-lg rounded-xl hover:shadow-xl transition-shadow">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                 <MapPin className="w-6 h-6 text-primary" />
               </div>
