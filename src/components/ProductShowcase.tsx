@@ -120,19 +120,6 @@ const ProductShowcase = () => {
       usage: "กันกระแทก"
     },
     {
-      id: 8,
-      category: "เครื่องจักร",
-      name: "เครื่องซีลปากถุง (Impulse Sealer)",
-      description: "เครื่องซีลมือกด ใช้กับถุง PE/PP/OPP",
-      sizes: "ความยาวลวด 8″, 12″, 16″ (หน้าซีล 2–5 มม.)",
-      features: "ซีลแน่น ตั้งเวลาตามความหนาถุง มีอะไหล่ลวด/เทปเทฟลอน",
-      image: "/lovable-uploads/9f0a0826-631c-4241-b3a2-4c6cfe387b72.png",
-      material: "โลหะ/พลาสติก",
-      thickness: "-",
-      usage: "ซีลปากถุง",
-      popular: true
-    },
-    {
       id: 9,
       category: "อุปกรณ์แพ็คกิ้ง",
       name: "เชือกฟาง PP หลากสี",
