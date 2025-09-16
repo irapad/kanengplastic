@@ -204,10 +204,6 @@ const PrintCatalog = () => {
         <div className="container mx-auto px-4">
           {/* Title Section */}
           <div className="text-center mb-12 fade-in">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              <span className="text-primary">ตัวอย่างงาน</span>
-              <span className="text-foreground">พิมพ์คุณภาพสูง</span>
-            </h2>
             <p className="text-xl md:text-2xl text-foreground font-bold max-w-3xl mx-auto leading-relaxed">ผลงานพิมพ์/ออกแบบถุงพลาสติก <span className="text-primary">1-8 สี</span> คุณภาพจาก<span className="text-primary">กันเองพลาสติก(บางน้ำจืด)</span></p>
           </div>
 
