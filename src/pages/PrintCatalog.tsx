@@ -238,20 +238,13 @@ const PrintCatalog = () => {
         {/* Contact CTA */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              ต้องการสั่งผลิตถุงพิมพ์ตามแบบ?
-            </h3>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              เรารับผลิตถุงพิมพ์ลายตามความต้องการ 1-8 สี พร้อมบริการออกแบบฟรี 
-              MOQ เริ่มต้น 1,000 ใบ ส่งมอบรวดเร็ว คุณภาพมาตรฐานส่งออก
-            </p>
             <div className="space-y-3 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-              <button className="w-full sm:w-auto contact-btn phone-btn px-8 py-3">
+              <a href="tel:096-636-5000" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-8 py-3 transition-colors inline-block">
                 โทรสอบถาม 096-636-5000
-              </button>
-              <button className="w-full sm:w-auto bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-lg px-8 py-3 transition-colors">
-                ส่งรูปขอเสนอราคา
-              </button>
+              </a>
+              <a href="https://line.me/ti/p/~tee4828" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-lg px-8 py-3 transition-colors inline-block">
+                LINE: tee4828
+              </a>
             </div>
           </div>
         </div>
