@@ -206,17 +206,6 @@ const ProductShowcase = () => {
           <p className="text-lg text-muted-foreground mb-8">
             ถุงพลาสติกและอุปกรณ์บรรจุภัณฑ์คุณภาพสูง ประสบการณ์ 15+ ปี
           </p>
-          
-          {/* Print Catalog Button */}
-          <div className="mb-8">
-            <Link 
-              to="/print-catalog" 
-              className="inline-flex items-center space-x-2 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-6 py-3 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium"
-            >
-              <Package className="w-5 h-5" />
-              <span>ดูแคตตาล็อกถุงพิมพ์ลาย</span>
-            </Link>
-          </div>
         </div>
 
         {/* Search & Filter */}
@@ -332,6 +321,19 @@ const ProductShowcase = () => {
             </div>
           ))}
         </div>
+
+        {/* Print Catalog Button - Show after machinery section */}
+        {(selectedCategory === "ทั้งหมด" || selectedCategory === "เครื่องจักร") && filteredProducts.length > 0 && (
+          <div className="text-center mt-12 mb-8">
+            <Link 
+              to="/print-catalog" 
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-6 py-3 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium"
+            >
+              <Package className="w-5 h-5" />
+              <span>ดูแคตตาล็อกถุงพิมพ์ลาย</span>
+            </Link>
+          </div>
+        )}
 
         {/* No Results */}
         {filteredProducts.length === 0 && (
