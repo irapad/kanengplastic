@@ -29,6 +29,7 @@ import catalogLionBlade from "../assets/catalog-lion-blade.jpg";
 import catalogJpCrabStick from "../assets/catalog-jp-crab-stick.jpg";
 import catalogChabaShampoo from "../assets/catalog-chaba-shampoo.jpg";
 import catalogEagleCoconut from "../assets/catalog-eagle-coconut.jpg";
+import catalogBigbearPremium from "../assets/catalog-bigbear-premium.jpg";
 
 const PrintCatalog = () => {
   const [selectedCategory, setSelectedCategory] = useState("ทั้งหมด");
@@ -546,6 +547,25 @@ const PrintCatalog = () => {
         "เหมาะสำหรับเครื่องดื่มแช่แข็ง"
       ],
       category: "6 สี"
+    },
+    {
+      id: 28,
+      title: "Big Bear Premium - ลูกอมพรีเมี่ยม",
+      colors: 8,
+      description: "ถุงลูกอมพิมพ์ 8 สี (แดง + เหลือง + เขียว + น้ำตาล + ส้ม + ขาว + ดำ + ชมพู)",
+      image: catalogBigbearPremium,
+      specifications: [
+        "ขนาด: 13×4.75 นิ้ว",
+        "พิมพ์ 8 สี (แดง + เหลือง + เขียว + น้ำตาล + ส้ม + ขาว + ดำ + ชมพู)",
+        "วัสดุ: BOPP laminated",
+        "น้ำหนัก: 78 กรัม"
+      ],
+      features: [
+        "พิมพ์ตัวการ์ตูนหมี 3D สีสันสวยงาม",
+        "งานพิมพ์ครบ 8 สี คมชัดสุดขั้ว",
+        "เหมาะสำหรับลูกอมระดับพรีเมี่ยม"
+      ],
+      category: "8 สี"
     }
   ];
 
@@ -686,10 +706,10 @@ const PrintCatalog = () => {
         {/* Available Catalog */}
         <div className="text-center py-12 bg-card/30 backdrop-blur-sm rounded-2xl border border-border/50 mb-12">
           <Palette className="w-16 h-16 text-primary mx-auto mb-4" />
-          <h3 className="text-2xl font-bold text-foreground mb-4">งานพิมพ์ 1-6 สี พร้อมให้บริการ</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-4">งานพิมพ์ 1-8 สี พร้อมให้บริการ</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            ตัวอย่างงานพิมพ์คุณภาพสูง 1-6 สี พร้อมรับสั่งผลิต MOQ เริ่มต้น 1,000 ใบ 
-            งานพิมพ์ 7-8 สี กำลังจัดเตรียมเพิ่มเติม
+            ตัวอย่างงานพิมพ์คุณภาพสูง 1-8 สี พร้อมรับสั่งผลิต MOQ เริ่มต้น 1,000 ใบ 
+            ครบครันทุกระดับสี สำหรับงานพิมพ์คุณภาพระดับโลก
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <div className="bg-gradient-to-r from-green-500/20 to-teal-500/20 px-4 py-2 rounded-full">
@@ -699,7 +719,7 @@ const PrintCatalog = () => {
               <span className="text-sm font-medium">✅ 5-6 สี พร้อมแล้ว</span>
             </div>
             <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 px-4 py-2 rounded-full">
-              <span className="text-sm font-medium">🔄 7-8 สี กำลังมา</span>
+              <span className="text-sm font-medium">✅ 7-8 สี พร้อมแล้ว</span>
             </div>
           </div>
         </div>
